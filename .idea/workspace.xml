@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/builder/GiftCertificateBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +50,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647335633902</updated>
-      <workItem from="1647335637471" duration="8104000" />
+      <workItem from="1647335637471" duration="8996000" />
     </task>
+    <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
+      <created>1647351136968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647351136968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +75,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies" />
   </component>
 </project>
