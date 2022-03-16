@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateRepository created&#10;TagRepository created">
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Repository interfaces created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647335633902</updated>
-      <workItem from="1647335637471" duration="14261000" />
+      <workItem from="1647335637471" duration="14306000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -76,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647354689455</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Repository interfaces created">
+      <created>1647358924815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647358924815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +98,7 @@
     <MESSAGE value="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies" />
     <MESSAGE value="GiftCertificate entity created&#10;Tag entity created&#10;GiftCertificateBuilder created" />
     <MESSAGE value="GiftCertificateRepository created&#10;TagRepository created" />
-    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateRepository created&#10;TagRepository created" />
+    <MESSAGE value="Repository interfaces created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repository interfaces created" />
   </component>
 </project>
