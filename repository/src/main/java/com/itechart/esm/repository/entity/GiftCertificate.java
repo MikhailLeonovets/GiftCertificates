@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.Period;
 import java.util.Objects;
 
 public class GiftCertificate implements Serializable {
@@ -13,14 +14,14 @@ public class GiftCertificate implements Serializable {
 	private BigDecimal price;
 	private LocalDateTime dateOfCreation;
 	private LocalDateTime dateOfModification;
-	private Duration expirationPeriod;
+	private Period expirationPeriod;
 
 	public GiftCertificate() {
 	}
 
 	public GiftCertificate(Long id, String name, String description,
 	                       BigDecimal price, LocalDateTime dateOfCreation,
-	                       LocalDateTime dateOfModification, Duration expirationPeriod) {
+	                       LocalDateTime dateOfModification, Period expirationPeriod) {
 		this.id = id;
 		this.name = name;
 		this.description = description;
@@ -78,11 +79,11 @@ public class GiftCertificate implements Serializable {
 		this.dateOfModification = dateOfModification;
 	}
 
-	public Duration getExpirationPeriod() {
+	public Period getExpirationPeriod() {
 		return expirationPeriod;
 	}
 
-	public void setExpirationPeriod(Duration expirationPeriod) {
+	public void setExpirationPeriod(Period expirationPeriod) {
 		this.expirationPeriod = expirationPeriod;
 	}
 

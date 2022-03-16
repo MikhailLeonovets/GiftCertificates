@@ -13,7 +13,7 @@ public interface GiftCertificateRepository {
 
 	Optional<GiftCertificate> findById(Long id);
 
-	GiftCertificate update(GiftCertificate giftCertificate);
+	void update(GiftCertificate giftCertificate);
 
 	void delete(GiftCertificate giftCertificate);
 

@@ -5,6 +5,7 @@ import com.itechart.esm.repository.entity.GiftCertificate;
 import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.time.Period;
 
 public class GiftCertificateBuilder {
 	private Long id;
@@ -13,7 +14,7 @@ public class GiftCertificateBuilder {
 	private BigDecimal price;
 	private LocalDateTime dateOfCreation;
 	private LocalDateTime dateOfModification;
-	private Duration expirationPeriod;
+	private Period expirationPeriod;
 
 	public GiftCertificateBuilder setId(Long id) {
 		this.id = id;
@@ -45,7 +46,7 @@ public class GiftCertificateBuilder {
 		return this;
 	}
 
-	public GiftCertificateBuilder setExpirationPeriod(Duration expirationPeriod) {
+	public GiftCertificateBuilder setExpirationPeriod(Period expirationPeriod) {
 		this.expirationPeriod = expirationPeriod;
 		return this;
 	}

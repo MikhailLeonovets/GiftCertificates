@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="workspace.xml updated">
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed">
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/mapper/GiftCertificateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/src/main/java/com/itechart/esm/utilities/converter/PostgresIntervalConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/builder/GiftCertificateBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/builder/GiftCertificateBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/resources/database.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +48,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -50,7 +62,8 @@
       <option name="presentableId" value="Default" />
       <updated>1647335633902</updated>
       <workItem from="1647335637471" duration="14306000" />
-      <workItem from="1647415194466" duration="2884000" />
+      <workItem from="1647415194466" duration="15567000" />
+      <workItem from="1647438588273" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -87,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647415300221</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed">
+      <created>1647422004769</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1647422004769</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +130,7 @@
     <MESSAGE value="GiftCertificateRepository created&#10;TagRepository created" />
     <MESSAGE value="Repository interfaces created" />
     <MESSAGE value="workspace.xml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml updated" />
+    <MESSAGE value="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed" />
+    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed" />
   </component>
 </project>

@@ -74,5 +74,6 @@
         <module>repository</module>
         <module>service</module>
         <module>controller</module>
+        <module>utilities</module>
     </modules>
 </project>
