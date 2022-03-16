@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class GiftCertificateJdbcRepository implements GiftCertificateRepository {
+public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepository {
 	@Override
 	public GiftCertificate save(GiftCertificate giftCertificate) {
 		return null;
