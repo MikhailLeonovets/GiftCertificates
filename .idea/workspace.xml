@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateTagRepository created&#10;Repositories updated">
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateTagSpringJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/mapper/GiftCertificateTagMapper.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created">
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/config/SpringConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/exception/GiftCertificateNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/exception/TagNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/builder/GiftCertificateBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/builder/GiftCertificateBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +57,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\controller\src\main\java\com\itechart\esm\controller" />
+      <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\controller" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -66,7 +78,8 @@
       <workItem from="1647335637471" duration="14306000" />
       <workItem from="1647415194466" duration="15567000" />
       <workItem from="1647438588273" duration="4833000" />
-      <workItem from="1647501175871" duration="7599000" />
+      <workItem from="1647501175871" duration="9280000" />
+      <workItem from="1647516668679" duration="8841000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -138,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647505424014</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created">
+      <created>1647511221639</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647511221639</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +186,7 @@
     <MESSAGE value="TagMapper created&#10;TagSpringJdbcRepository updated" />
     <MESSAGE value="GiftCertificateTag created&#10;GiftCertificate updated" />
     <MESSAGE value="GiftCertificateTagRepository created&#10;Repositories updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateTagRepository created&#10;Repositories updated" />
+    <MESSAGE value="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created" />
   </component>
 </project>

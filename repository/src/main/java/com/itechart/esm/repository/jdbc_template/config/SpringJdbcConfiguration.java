@@ -2,7 +2,6 @@ package com.itechart.esm.repository.jdbc_template.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -11,7 +10,6 @@ import javax.sql.DataSource;
 
 @Configuration
 @PropertySource("classpath:/database.properties")
-@ComponentScan("com.itechart.esm.repository")
 public class SpringJdbcConfiguration {
 	@Value("${spring.datasource.url}")
 	private String dbUrl;
