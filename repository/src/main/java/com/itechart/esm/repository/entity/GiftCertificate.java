@@ -30,6 +30,10 @@ public class GiftCertificate implements Serializable {
 		this.expirationPeriod = expirationPeriod;
 	}
 
+	public GiftCertificate(Long id) {
+		this.id = id;
+	}
+
 	public Long getId() {
 		return id;
 	}

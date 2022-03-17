@@ -3,7 +3,6 @@ package com.itechart.esm.repository.entity.builder;
 import com.itechart.esm.repository.entity.GiftCertificate;
 
 import java.math.BigDecimal;
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Period;
 
