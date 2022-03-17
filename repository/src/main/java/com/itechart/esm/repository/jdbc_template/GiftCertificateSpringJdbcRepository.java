@@ -77,21 +77,21 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 	}
 
 	@Override
-	public void update(GiftCertificate giftCertificate) {
-		jdbcTemplate.update(UPDATE_GIFT_CERTIFICATE_QUERY, giftCertificate.getName(),
+	public boolean update(GiftCertificate giftCertificate) {
+		return jdbcTemplate.update(UPDATE_GIFT_CERTIFICATE_QUERY, giftCertificate.getName(),
 				giftCertificate.getDescription(), giftCertificate.getPrice(),
 				Timestamp.valueOf(giftCertificate.getDateOfModification()),
 				PostgresIntervalConverter.convertTimePeriodToPGInterval(giftCertificate.getExpirationPeriod()),
-				giftCertificate.getId());
+				giftCertificate.getId()) > 0;
 	}
 
 	@Override
-	public void delete(GiftCertificate giftCertificate) {
-		jdbcTemplate.update(DELETE_GIFT_CERTIFICATE_BY_ID_QUERY, giftCertificate.getId());
+	public boolean delete(GiftCertificate giftCertificate) {
+		return jdbcTemplate.update(DELETE_GIFT_CERTIFICATE_BY_ID_QUERY, giftCertificate.getId()) > 0;
 	}
 
 	@Override
-	public void deleteById(Long id) {
-		jdbcTemplate.update(DELETE_GIFT_CERTIFICATE_BY_ID_QUERY, id);
+	public boolean deleteById(Long id) {
+		return jdbcTemplate.update(DELETE_GIFT_CERTIFICATE_BY_ID_QUERY, id) > 0;
 	}
 }

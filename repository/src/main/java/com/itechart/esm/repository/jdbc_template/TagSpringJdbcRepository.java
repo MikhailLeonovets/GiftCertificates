@@ -58,12 +58,12 @@ public class TagSpringJdbcRepository implements TagRepository {
 	}
 
 	@Override
-	public void delete(Tag tag) {
-		jdbcTemplate.update(DELETE_TAG_BY_ID, tag.getId());
+	public boolean delete(Tag tag) {
+		return jdbcTemplate.update(DELETE_TAG_BY_ID, tag.getId()) > 0;
 	}
 
 	@Override
-	public void deleteById(Long id) {
-		jdbcTemplate.update(DELETE_TAG_BY_ID, id);
+	public boolean deleteById(Long id) {
+		return jdbcTemplate.update(DELETE_TAG_BY_ID, id) > 0;
 	}
 }
