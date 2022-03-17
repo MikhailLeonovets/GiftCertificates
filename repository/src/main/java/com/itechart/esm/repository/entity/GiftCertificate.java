@@ -2,7 +2,6 @@ package com.itechart.esm.repository.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Period;
 import java.util.Objects;

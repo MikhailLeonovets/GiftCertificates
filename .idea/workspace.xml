@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="database.properties url changed&#10;GiftCertificate updated&#10;GiftCertificateSpringJdbcRepository updated&#10;utilities module created&#10;PostgresIntervalConverter created&#10;GiftCertificateMapper created">
-      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/mapper/TagMapper.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="TagMapper created&#10;TagSpringJdbcRepository updated">
+      <change afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificateTag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,8 @@
       <updated>1647335633902</updated>
       <workItem from="1647335637471" duration="14306000" />
       <workItem from="1647415194466" duration="15567000" />
-      <workItem from="1647438588273" duration="3526000" />
+      <workItem from="1647438588273" duration="4833000" />
+      <workItem from="1647501175871" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647439679612</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="TagMapper created&#10;TagSpringJdbcRepository updated">
+      <created>1647442374591</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647442374591</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +138,7 @@
     <MESSAGE value="workspace.xml updated" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed" />
     <MESSAGE value="database.properties url changed&#10;GiftCertificate updated&#10;GiftCertificateSpringJdbcRepository updated&#10;utilities module created&#10;PostgresIntervalConverter created&#10;GiftCertificateMapper created" />
-    <option name="LAST_COMMIT_MESSAGE" value="database.properties url changed&#10;GiftCertificate updated&#10;GiftCertificateSpringJdbcRepository updated&#10;utilities module created&#10;PostgresIntervalConverter created&#10;GiftCertificateMapper created" />
+    <MESSAGE value="TagMapper created&#10;TagSpringJdbcRepository updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="TagMapper created&#10;TagSpringJdbcRepository updated" />
   </component>
 </project>
