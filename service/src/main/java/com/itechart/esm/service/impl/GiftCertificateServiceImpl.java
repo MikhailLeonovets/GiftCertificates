@@ -3,6 +3,7 @@ package com.itechart.esm.service.impl;
 import com.itechart.esm.repository.GiftCertificateRepository;
 import com.itechart.esm.repository.entity.GiftCertificate;
 import com.itechart.esm.service.GiftCertificateService;
+import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.GiftCertificateNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,7 +31,10 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 	}
 
 	@Override
-	public GiftCertificate findById(Long id) throws GiftCertificateNotFoundException {
+	public GiftCertificate findById(Long id) throws GiftCertificateNotFoundException, DataInputException {
+		if (id == null) {
+			throw new DataInputException();
+		}
 		Optional<GiftCertificate> optionalGiftCertificate = giftCertificateRepository.findById(id);
 		if (optionalGiftCertificate.isEmpty()) {
 			throw new GiftCertificateNotFoundException();
@@ -39,7 +43,10 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 	}
 
 	@Override
-	public void update(GiftCertificate giftCertificate) throws GiftCertificateNotFoundException {
+	public void update(GiftCertificate giftCertificate) throws GiftCertificateNotFoundException, DataInputException {
+		if (giftCertificate == null) {
+			throw new DataInputException();
+		}
 		boolean isUpdated = giftCertificateRepository.update(giftCertificate);
 		if (!isUpdated) {
 			throw new GiftCertificateNotFoundException();
@@ -47,7 +54,10 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 	}
 
 	@Override
-	public void delete(GiftCertificate giftCertificate) throws GiftCertificateNotFoundException {
+	public void delete(GiftCertificate giftCertificate) throws GiftCertificateNotFoundException, DataInputException {
+		if (giftCertificate == null) {
+			throw new DataInputException();
+		}
 		boolean isDeleted = giftCertificateRepository.delete(giftCertificate);
 		if (!isDeleted) {
 			throw new GiftCertificateNotFoundException();
@@ -55,7 +65,10 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 	}
 
 	@Override
-	public void deleteById(Long id) throws GiftCertificateNotFoundException {
+	public void deleteById(Long id) throws GiftCertificateNotFoundException, DataInputException {
+		if (id == null) {
+			throw new DataInputException();
+		}
 		boolean isDeleted = giftCertificateRepository.deleteById(id);
 		if (!isDeleted) {
 			throw new GiftCertificateNotFoundException();

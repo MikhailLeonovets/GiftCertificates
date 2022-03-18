@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created">
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/exception/GiftCertificateNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/exception/TagNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl">
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/exception/DataInputException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/exception/GiftCertificateTagNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateTagServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateTagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateTagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +74,8 @@
       <workItem from="1647415194466" duration="15567000" />
       <workItem from="1647438588273" duration="4833000" />
       <workItem from="1647501175871" duration="9280000" />
-      <workItem from="1647516668679" duration="8841000" />
+      <workItem from="1647516668679" duration="9050000" />
+      <workItem from="1647587403461" duration="2347000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -158,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647511221639</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl">
+      <created>1647530519549</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647530519549</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +190,7 @@
     <MESSAGE value="GiftCertificateTag created&#10;GiftCertificate updated" />
     <MESSAGE value="GiftCertificateTagRepository created&#10;Repositories updated" />
     <MESSAGE value="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created" />
+    <MESSAGE value="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl" />
   </component>
 </project>

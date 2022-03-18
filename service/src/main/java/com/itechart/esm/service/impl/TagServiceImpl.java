@@ -3,11 +3,14 @@ package com.itechart.esm.service.impl;
 import com.itechart.esm.repository.TagRepository;
 import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.service.TagService;
+import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.TagNotFoundException;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class TagServiceImpl implements TagService {
 	private final TagRepository tagRepository;
 
@@ -16,7 +19,10 @@ public class TagServiceImpl implements TagService {
 	}
 
 	@Override
-	public void save(Tag tag) {
+	public void save(Tag tag) throws DataInputException {
+		if (tag == null) {
+			throw new DataInputException();
+		}
 		tagRepository.save(tag);
 	}
 
@@ -26,7 +32,10 @@ public class TagServiceImpl implements TagService {
 	}
 
 	@Override
-	public Tag findById(Long id) throws TagNotFoundException {
+	public Tag findById(Long id) throws TagNotFoundException, DataInputException {
+		if (id == null) {
+			throw new DataInputException();
+		}
 		Optional<Tag> optionalTag = tagRepository.findById(id);
 		if (optionalTag.isEmpty()) {
 			throw new TagNotFoundException();
@@ -35,7 +44,10 @@ public class TagServiceImpl implements TagService {
 	}
 
 	@Override
-	public void delete(Tag tag) throws TagNotFoundException {
+	public void delete(Tag tag) throws TagNotFoundException, DataInputException {
+		if (tag == null) {
+			throw new DataInputException();
+		}
 		boolean isDeleted = tagRepository.delete(tag);
 		if (!isDeleted) {
 			throw new TagNotFoundException();
@@ -43,7 +55,10 @@ public class TagServiceImpl implements TagService {
 	}
 
 	@Override
-	public void deleteById(Long id) throws TagNotFoundException {
+	public void deleteById(Long id) throws TagNotFoundException, DataInputException {
+		if (id == null) {
+			throw new DataInputException();
+		}
 		boolean isDeleted = tagRepository.deleteById(id);
 		if (!isDeleted) {
 			throw new TagNotFoundException();
