@@ -83,7 +83,7 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 				= giftCertificateTagService.findByGiftCertificate
 						(giftCertificateAndItsTags.getGiftCertificate()).stream()
 				.map(GiftCertificateTag::getTag).collect(Collectors.toSet());
-
+		//Set<Tag> tagsToAdd = actualTags.stream()
 	}
 
 	@Override
