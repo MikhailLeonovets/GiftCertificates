@@ -14,6 +14,8 @@ public interface TagService {
 
 	Tag findById(Long id) throws TagNotFoundException, DataInputException;
 
+	Tag findByName(String name) throws TagNotFoundException, DataInputException;
+
 	void delete(Tag tag) throws TagNotFoundException, DataInputException;
 
 	void deleteById(Long id) throws TagNotFoundException, DataInputException;

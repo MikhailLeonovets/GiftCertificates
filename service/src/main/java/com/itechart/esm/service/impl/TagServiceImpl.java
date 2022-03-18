@@ -5,6 +5,7 @@ import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.service.TagService;
 import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.TagNotFoundException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.Optional;
 public class TagServiceImpl implements TagService {
 	private final TagRepository tagRepository;
 
+	@Autowired
 	public TagServiceImpl(TagRepository tagRepository) {
 		this.tagRepository = tagRepository;
 	}
@@ -36,11 +38,16 @@ public class TagServiceImpl implements TagService {
 		if (id == null) {
 			throw new DataInputException();
 		}
-		Optional<Tag> optionalTag = tagRepository.findById(id);
-		if (optionalTag.isEmpty()) {
-			throw new TagNotFoundException();
+		return tagRepository.findById(id).orElseThrow(TagNotFoundException::new);
+	}
+
+	@Override
+	public Tag findByName(String name) throws TagNotFoundException, DataInputException {
+		if (name == null || name.isEmpty()) {
+			throw new DataInputException();
 		}
-		return null;
+		Optional<Tag> optionalTag = tagRepository.findByName(name);
+		return optionalTag.orElseThrow(TagNotFoundException::new);
 	}
 
 	@Override

@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class GiftCertificateServiceImpl implements GiftCertificateService {
@@ -21,7 +20,10 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 	}
 
 	@Override
-	public void save(GiftCertificate giftCertificate) {
+	public void save(GiftCertificate giftCertificate) throws DataInputException {
+		if (giftCertificate == null) {
+			throw new DataInputException();
+		}
 		giftCertificateRepository.save(giftCertificate);
 	}
 
@@ -35,11 +37,7 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 		if (id == null) {
 			throw new DataInputException();
 		}
-		Optional<GiftCertificate> optionalGiftCertificate = giftCertificateRepository.findById(id);
-		if (optionalGiftCertificate.isEmpty()) {
-			throw new GiftCertificateNotFoundException();
-		}
-		return optionalGiftCertificate.get();
+		return giftCertificateRepository.findById(id).orElseThrow(GiftCertificateNotFoundException::new);
 	}
 
 	@Override

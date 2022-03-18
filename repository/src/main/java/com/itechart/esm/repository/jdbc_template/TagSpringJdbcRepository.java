@@ -25,6 +25,8 @@ public class TagSpringJdbcRepository implements TagRepository {
 			= "INSERT INTO tag (name) VALUES (?)";
 	private static final String DELETE_TAG_BY_ID
 			= "DELETE FROM tag WHERE id = ?";
+	private static final String SELECT_BY_NAME_QUERY
+			= "SELECT * FROM tag WHERE name = ?";
 
 	private final JdbcTemplate jdbcTemplate;
 
@@ -55,6 +57,11 @@ public class TagSpringJdbcRepository implements TagRepository {
 	@Override
 	public Optional<Tag> findById(Long id) {
 		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_TAG_BY_ID, new TagMapper(), id));
+	}
+
+	@Override
+	public Optional<Tag> findByName(String name) {
+		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_NAME_QUERY, new TagMapper(), name));
 	}
 
 	@Override

@@ -13,6 +13,8 @@ public interface TagRepository {
 
 	Optional<Tag> findById(Long id);
 
+	Optional<Tag> findByName(String name);
+
 	boolean delete(Tag tag);
 
 	boolean deleteById(Long id);

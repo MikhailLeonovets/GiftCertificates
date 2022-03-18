@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface GiftCertificateService {
 
-	void save(GiftCertificate giftCertificate);
+	void save(GiftCertificate giftCertificate) throws DataInputException;
 
 	List<GiftCertificate> findAll();
 

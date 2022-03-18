@@ -46,6 +46,10 @@ public class GiftCertificateAndItsTags implements Serializable {
 		this.tags.add(tag);
 	}
 
+	public void addTags(Set<Tag> tags) {
+		this.tags.addAll(tags);
+	}
+
 	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
