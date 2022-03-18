@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -75,8 +76,13 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 
 	@Override
 	public void update(GiftCertificateAndItsTags giftCertificateAndItsTags)
-			throws GiftCertificateNotFoundException, DataInputException {
+			throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException {
 		giftCertificateService.update(giftCertificateAndItsTags.getGiftCertificate());
+		Set<Tag> actualTags = giftCertificateAndItsTags.getTags();
+		Set<Tag> databaseTags
+				= giftCertificateTagService.findByGiftCertificate
+						(giftCertificateAndItsTags.getGiftCertificate()).stream()
+				.map(GiftCertificateTag::getTag).collect(Collectors.toSet());
 
 	}
 

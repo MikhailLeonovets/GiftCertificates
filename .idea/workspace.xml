@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateAndItsTags created&#10;GiftCertificateManagementService created">
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Services updated&#10;GiftCertificateManagementService created and implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/TagRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateTagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateTagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/model/GiftCertificateAndItsTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/model/GiftCertificateAndItsTags.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +72,7 @@
       <workItem from="1647438588273" duration="4833000" />
       <workItem from="1647501175871" duration="9280000" />
       <workItem from="1647516668679" duration="9050000" />
-      <workItem from="1647587403461" duration="20255000" />
+      <workItem from="1647587403461" duration="23257000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -180,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647595446266</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Services updated&#10;GiftCertificateManagementService created and implemented">
+      <created>1647615097370</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1647615097370</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +211,7 @@
     <MESSAGE value="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl" />
     <MESSAGE value="DataInputException created&#10;GiftCertificateService updated&#10;GiftCertificateTagNotFoundException created&#10;GiftCertificateTagService created&#10;GiftCertificateTagServiceImpl created" />
     <MESSAGE value="GiftCertificateAndItsTags created&#10;GiftCertificateManagementService created" />
-    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateAndItsTags created&#10;GiftCertificateManagementService created" />
+    <MESSAGE value="Services updated&#10;GiftCertificateManagementService created and implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Services updated&#10;GiftCertificateManagementService created and implemented" />
   </component>
 </project>

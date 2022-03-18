@@ -16,7 +16,7 @@ public interface GiftCertificateManagementService {
 
 	List<GiftCertificateAndItsTags> findByTag(Tag tag) throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
 
-	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException;
+	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException;
 
 	void delete(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException;
 

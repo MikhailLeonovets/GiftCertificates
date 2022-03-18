@@ -10,6 +10,7 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
+import javax.swing.text.html.Option;
 import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Objects;
@@ -39,6 +40,10 @@ public class TagSpringJdbcRepository implements TagRepository {
 
 	@Override
 	public Tag save(Tag tag) {
+		Optional<Tag> optionalTag = findByName(tag.getName());
+		if (optionalTag.isPresent()) {
+			return optionalTag.get();
+		}
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(con -> {
 			PreparedStatement preparedStatement = con.prepareStatement(INSERT_TAG_QUERY, new String[]{"id"});
