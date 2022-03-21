@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface TagService {
 
-	void save(Tag tag) throws DataInputException;
+	Tag save(Tag tag) throws DataInputException;
 
 	List<Tag> findAll();
 

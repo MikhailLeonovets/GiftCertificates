@@ -21,11 +21,11 @@ public class TagServiceImpl implements TagService {
 	}
 
 	@Override
-	public void save(Tag tag) throws DataInputException {
+	public Tag save(Tag tag) throws DataInputException {
 		if (tag == null) {
 			throw new DataInputException();
 		}
-		tagRepository.save(tag);
+		return tagRepository.save(tag);
 	}
 
 	@Override

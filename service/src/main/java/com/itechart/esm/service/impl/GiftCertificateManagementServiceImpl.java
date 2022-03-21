@@ -9,6 +9,7 @@ import com.itechart.esm.service.GiftCertificateTagService;
 import com.itechart.esm.service.TagService;
 import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.GiftCertificateNotFoundException;
+import com.itechart.esm.service.exception.GiftCertificateTagNotFoundException;
 import com.itechart.esm.service.exception.TagNotFoundException;
 import com.itechart.esm.service.model.GiftCertificateAndItsTags;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,14 +77,42 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 
 	@Override
 	public void update(GiftCertificateAndItsTags giftCertificateAndItsTags)
-			throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException {
-		giftCertificateService.update(giftCertificateAndItsTags.getGiftCertificate());
+			throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException,
+			GiftCertificateTagNotFoundException {
+		GiftCertificate giftCertificate = giftCertificateAndItsTags.getGiftCertificate();
+		giftCertificateService.update(giftCertificate);
 		Set<Tag> actualTags = giftCertificateAndItsTags.getTags();
 		Set<Tag> databaseTags
-				= giftCertificateTagService.findByGiftCertificate
-						(giftCertificateAndItsTags.getGiftCertificate()).stream()
+				= giftCertificateTagService.findByGiftCertificate(giftCertificate)
+				.stream()
 				.map(GiftCertificateTag::getTag).collect(Collectors.toSet());
-		//Set<Tag> tagsToAdd = actualTags.stream()
+		saveTagsAttachedToGiftCertificate(giftCertificate, actualTags, databaseTags);
+		deleteTagsAttachedTOGiftCertificate(giftCertificate, actualTags, databaseTags);
+	}
+
+	private void deleteTagsAttachedTOGiftCertificate(GiftCertificate giftCertificate,
+	                                                 Set<Tag> actualTags, Set<Tag> databaseTags)
+			throws GiftCertificateTagNotFoundException, DataInputException {
+		for (Tag tagToDelete : databaseTags) {
+			if (!actualTags.contains(tagToDelete)) {
+				GiftCertificateTag giftCertificateTag =
+						giftCertificateTagService.findByTagIdAndGiftCertificateId(giftCertificate.getId(),
+								tagToDelete.getId());
+				giftCertificateTagService.delete(giftCertificateTag);
+			}
+		}
+	}
+
+	private void saveTagsAttachedToGiftCertificate(GiftCertificate giftCertificate, Set<Tag> actualTags,
+	                                               Set<Tag> databaseTags) throws DataInputException {
+		for (Tag tagToAdd : actualTags) {
+			if (!databaseTags.contains(tagToAdd)) {
+				tagToAdd = tagService.save(tagToAdd);
+				GiftCertificateTag giftCertificateTag =
+						new GiftCertificateTag(giftCertificate, tagToAdd);
+				giftCertificateTagService.save(giftCertificateTag);
+			}
+		}
 	}
 
 	@Override

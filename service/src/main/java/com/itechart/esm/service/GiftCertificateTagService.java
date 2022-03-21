@@ -14,13 +14,20 @@ public interface GiftCertificateTagService {
 
 	void save(GiftCertificateTag giftCertificateTag) throws DataInputException;
 
-	List<GiftCertificateTag> findAll() throws GiftCertificateTagNotFoundException, DataInputException, GiftCertificateNotFoundException, TagNotFoundException;
+	List<GiftCertificateTag> findAll() throws GiftCertificateTagNotFoundException, DataInputException,
+			GiftCertificateNotFoundException, TagNotFoundException;
 
-	GiftCertificateTag findById(Long id) throws GiftCertificateTagNotFoundException, DataInputException, GiftCertificateNotFoundException, TagNotFoundException;
+	GiftCertificateTag findById(Long id) throws GiftCertificateTagNotFoundException, DataInputException,
+			GiftCertificateNotFoundException, TagNotFoundException;
 
-	List<GiftCertificateTag> findByTag(Tag tag) throws DataInputException, GiftCertificateNotFoundException, TagNotFoundException;
+	List<GiftCertificateTag> findByTag(Tag tag) throws DataInputException, GiftCertificateNotFoundException,
+			TagNotFoundException;
 
-	List<GiftCertificateTag> findByGiftCertificate(GiftCertificate giftCertificate) throws DataInputException, GiftCertificateNotFoundException, TagNotFoundException;
+	List<GiftCertificateTag> findByGiftCertificate(GiftCertificate giftCertificate) throws DataInputException,
+			GiftCertificateNotFoundException, TagNotFoundException;
+
+	GiftCertificateTag findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId)
+			throws GiftCertificateTagNotFoundException;
 
 	void delete(GiftCertificateTag giftCertificateTag) throws GiftCertificateTagNotFoundException, DataInputException;
 

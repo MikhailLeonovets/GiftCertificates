@@ -96,6 +96,13 @@ public class GiftCertificateTagServiceImpl implements GiftCertificateTagService 
 	}
 
 	@Override
+	public GiftCertificateTag findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId)
+			throws GiftCertificateTagNotFoundException {
+		return giftCertificateTagRepository.findByTagIdAndGiftCertificateId(tagId, giftCertificateId)
+				.orElseThrow(GiftCertificateTagNotFoundException::new);
+	}
+
+	@Override
 	public void delete(GiftCertificateTag giftCertificateTag)
 			throws GiftCertificateTagNotFoundException, DataInputException {
 		if (giftCertificateTag == null) {

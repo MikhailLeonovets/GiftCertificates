@@ -3,6 +3,7 @@ package com.itechart.esm.service;
 import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.GiftCertificateNotFoundException;
+import com.itechart.esm.service.exception.GiftCertificateTagNotFoundException;
 import com.itechart.esm.service.exception.TagNotFoundException;
 import com.itechart.esm.service.model.GiftCertificateAndItsTags;
 
@@ -16,7 +17,7 @@ public interface GiftCertificateManagementService {
 
 	List<GiftCertificateAndItsTags> findByTag(Tag tag) throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
 
-	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException;
+	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException, GiftCertificateTagNotFoundException;
 
 	void delete(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException;
 

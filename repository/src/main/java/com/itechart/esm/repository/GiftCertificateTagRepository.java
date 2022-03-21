@@ -19,6 +19,8 @@ public interface GiftCertificateTagRepository {
 
 	List<GiftCertificateTag> findByGiftCertificate(GiftCertificate giftCertificate);
 
+	Optional<GiftCertificateTag> findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId);
+
 	boolean delete(GiftCertificateTag giftCertificateTag);
 
 	boolean deleteById(Long id);

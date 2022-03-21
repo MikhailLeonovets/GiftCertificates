@@ -26,6 +26,8 @@ public class GiftCertificateTagSpringJdbcRepository implements GiftCertificateTa
 	private static final String SELECT_BY_TAG_QUERY = "SELECT * FROM gift_certificate_tag WHERE tag_id = ?";
 	private static final String SELECT_BY_GIFT_CERTIFICATE_QUERY = "SELECT * FROM gift_certificate_tag " +
 			"WHERE gift_certificate_id = ?";
+	private static final String SELECT_BY_TAG_ID_AND_GIFT_CERTIFICATE_ID_QUERY
+			= "SELECT * FROM gift_certificate_tag WHERE tag_id=? AND gift_certificate_id=?";
 	private static final String DELETE_BY_ID_QUERY = "DELETE FROM gift_certificate_tag WHERE id = ?";
 
 
@@ -69,6 +71,13 @@ public class GiftCertificateTagSpringJdbcRepository implements GiftCertificateTa
 	public List<GiftCertificateTag> findByGiftCertificate(GiftCertificate giftCertificate) {
 		return jdbcTemplate.query(SELECT_BY_GIFT_CERTIFICATE_QUERY, new GiftCertificateTagMapper(),
 				giftCertificate.getId());
+	}
+
+	@Override
+	public Optional<GiftCertificateTag> findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId) {
+		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_TAG_ID_AND_GIFT_CERTIFICATE_ID_QUERY,
+				new GiftCertificateTagMapper(),
+				tagId, giftCertificateId));
 	}
 
 	@Override
