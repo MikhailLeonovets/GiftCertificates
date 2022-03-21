@@ -1,5 +1,6 @@
 package com.itechart.esm.service;
 
+import com.itechart.esm.repository.entity.GiftCertificateTag;
 import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.GiftCertificateNotFoundException;
@@ -13,12 +14,20 @@ public interface GiftCertificateManagementService {
 
 	void createGiftCertificate(GiftCertificateAndItsTags giftCertificateAndItsTags) throws DataInputException;
 
-	List<GiftCertificateAndItsTags> findAll() throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
+	List<GiftCertificateAndItsTags> findAll() throws DataInputException, TagNotFoundException,
+			GiftCertificateNotFoundException;
 
-	List<GiftCertificateAndItsTags> findByTag(Tag tag) throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
+	GiftCertificateAndItsTags findById(Long id) throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException;
 
-	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException, GiftCertificateTagNotFoundException;
+	List<GiftCertificateAndItsTags> findByTag(Tag tag) throws DataInputException, TagNotFoundException,
+			GiftCertificateNotFoundException;
 
-	void delete(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException, DataInputException;
+	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException,
+			DataInputException, TagNotFoundException, GiftCertificateTagNotFoundException;
+
+	void delete(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException,
+			DataInputException;
+
+	void deleteById(Long id) throws GiftCertificateNotFoundException, DataInputException;
 
 }

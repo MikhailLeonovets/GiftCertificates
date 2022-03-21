@@ -62,6 +62,12 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	}
 
 	@Override
+	public GiftCertificateAndItsTags findById(Long id) throws GiftCertificateNotFoundException,
+			DataInputException, TagNotFoundException {
+		return createGiftCertificateAndItsTags(giftCertificateService.findById(id));
+	}
+
+	@Override
 	public List<GiftCertificateAndItsTags> findByTag(Tag tag)
 			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
 		List<GiftCertificateTag> giftCertificatesTags = giftCertificateTagService.findByTag(tag);
@@ -118,6 +124,11 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	public void delete(GiftCertificateAndItsTags giftCertificateAndItsTags)
 			throws GiftCertificateNotFoundException, DataInputException {
 		giftCertificateService.deleteById(giftCertificateAndItsTags.getGiftCertificate().getId());
+	}
+
+	@Override
+	public void deleteById(Long id) throws GiftCertificateNotFoundException, DataInputException {
+		giftCertificateService.deleteById(id);
 	}
 
 	private GiftCertificateAndItsTags createGiftCertificateAndItsTags(GiftCertificate giftCertificate)
