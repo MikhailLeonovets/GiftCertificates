@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="update - todo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateTagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateTagRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateTagSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateTagSpringJdbcRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Created CRUD operations with Gift Certificate which are for user's features">
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateTagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateTagServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/TagServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
       <workItem from="1647501175871" duration="9280000" />
       <workItem from="1647516668679" duration="9050000" />
       <workItem from="1647587403461" duration="23478000" />
-      <workItem from="1647847567878" duration="6479000" />
+      <workItem from="1647847567878" duration="6790000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -199,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647618259072</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Created CRUD operations with Gift Certificate which are for user's features">
+      <created>1647855759180</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1647855759180</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +234,7 @@
     <MESSAGE value="Services updated&#10;GiftCertificateManagementService created and implemented" />
     <MESSAGE value="GiftCertificateManagementService updated" />
     <MESSAGE value="update - todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="update - todo" />
+    <MESSAGE value="Created CRUD operations with Gift Certificate which are for user's features" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created CRUD operations with Gift Certificate which are for user's features" />
   </component>
 </project>
