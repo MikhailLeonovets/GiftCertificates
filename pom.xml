@@ -16,6 +16,7 @@
         <jackson.version>2.13.2</jackson.version>
         <mockito.version>1.10.19</mockito.version>
         <junit.jupiter.version>5.8.2</junit.jupiter.version>
+        <javax.servlet.version>4.0.1</javax.servlet.version>
     </properties>
 
     <dependencies>
@@ -66,6 +67,12 @@
             <artifactId>mockito-all</artifactId>
             <version>${mockito.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${javax.servlet.version}</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
