@@ -13,7 +13,7 @@ import java.util.List;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.itechart.esm")
+@ComponentScan({"com.itechart.esm", "com.itechart.esm.repository.jdbc_template.config"})
 public class SpringConfig implements WebMvcConfigurer {
 	private final ApplicationContext applicationContext;
 
