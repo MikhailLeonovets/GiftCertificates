@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="app config updated">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="SpringConfig updated">
+      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utilities/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +252,7 @@
       <workItem from="1647516668679" duration="9050000" />
       <workItem from="1647587403461" duration="23478000" />
       <workItem from="1647847567878" duration="20873000" />
-      <workItem from="1647933394157" duration="6772000" />
+      <workItem from="1647933394157" duration="7765000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -418,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647877476891</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="SpringConfig updated">
+      <created>1647943098005</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1647943098005</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,6 +463,7 @@
     <MESSAGE value="GiftCertificateManagementService updated with find by id &#10;response_msg.properties created&#10;gift_certificate_url.properties deleted" />
     <MESSAGE value="GiftCertificateController update with base functions of CRUD" />
     <MESSAGE value="app config updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="app config updated" />
+    <MESSAGE value="SpringConfig updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringConfig updated" />
   </component>
 </project>
