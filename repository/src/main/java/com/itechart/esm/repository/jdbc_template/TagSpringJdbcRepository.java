@@ -20,7 +20,7 @@ public class TagSpringJdbcRepository implements TagRepository {
 	private static final String SELECT_ALL_TAG_QUERY
 			= "SELECT * FROM tag";
 	private static final String SELECT_TAG_BY_ID
-			= "";
+			= "SELECT * FROM tag WHERE id =?";
 	private static final String INSERT_TAG_QUERY
 			= "INSERT INTO tag (name) VALUES (?)";
 	private static final String DELETE_TAG_BY_ID
@@ -31,9 +31,8 @@ public class TagSpringJdbcRepository implements TagRepository {
 	private final JdbcTemplate jdbcTemplate;
 
 	@Autowired
-	public TagSpringJdbcRepository(DataSource dataSource, JdbcTemplate jdbcTemplate) {
+	public TagSpringJdbcRepository(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
-		jdbcTemplate.setDataSource(dataSource);
 	}
 
 

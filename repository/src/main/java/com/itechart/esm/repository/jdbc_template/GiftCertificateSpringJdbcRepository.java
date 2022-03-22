@@ -41,9 +41,8 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 	private final JdbcTemplate jdbcTemplate;
 
 	@Autowired
-	public GiftCertificateSpringJdbcRepository(DataSource dataSource, JdbcTemplate jdbcTemplate) {
+	public GiftCertificateSpringJdbcRepository(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
-		jdbcTemplate.setDataSource(dataSource);
 	}
 
 	@Override

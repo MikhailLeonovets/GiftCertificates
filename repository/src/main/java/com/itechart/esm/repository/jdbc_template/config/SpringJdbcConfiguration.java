@@ -33,7 +33,7 @@ public class SpringJdbcConfiguration {
 		return dataSource;
 	}
 
-	@Bean(name = "applicationJdbcTemplate")
+	@Bean
 	public JdbcTemplate applicationDataConnection(){
 		return new JdbcTemplate(postgresqlDataSource());
 	}
