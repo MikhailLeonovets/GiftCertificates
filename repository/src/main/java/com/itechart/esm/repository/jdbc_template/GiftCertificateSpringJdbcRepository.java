@@ -10,7 +10,6 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
-import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.sql.Timestamp;
 import java.sql.Types;
@@ -51,7 +50,7 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 		jdbcTemplate.update(con -> {
 			PreparedStatement preparedStatement = con.prepareStatement(INSERT_GIFT_CERTIFICATE_QUERY,
 					new String[]{"id"});
-			preparedStatement.setString(1, giftCertificate.getName());
+			preparedStatement.setString(1, giftCertificate.getName()); //TODO 1, 2...
 			preparedStatement.setString(2, giftCertificate.getDescription());
 			preparedStatement.setBigDecimal(3, giftCertificate.getPrice());
 			preparedStatement.setTimestamp(4, Timestamp.valueOf(giftCertificate.getDateOfCreation()));

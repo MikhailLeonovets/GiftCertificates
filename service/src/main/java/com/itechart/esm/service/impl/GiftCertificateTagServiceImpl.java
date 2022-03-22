@@ -14,6 +14,7 @@ import com.itechart.esm.service.exception.TagNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -87,12 +88,12 @@ public class GiftCertificateTagServiceImpl implements GiftCertificateTagService 
 		}
 		List<GiftCertificateTag> giftCertificateTags =
 				giftCertificateTagRepository.findByGiftCertificate(giftCertificate);
+		List<GiftCertificateTag> populatedGiftCertificateTags = new ArrayList<>();
 		for (GiftCertificateTag giftCertificateTag : giftCertificateTags) {
 			GiftCertificateTag fullGiftCertificateTag = populate(giftCertificateTag);
-			giftCertificateTags.remove(giftCertificateTag);
-			giftCertificateTags.add(fullGiftCertificateTag);
+			populatedGiftCertificateTags.add(fullGiftCertificateTag);
 		}
-		return giftCertificateTags;
+		return populatedGiftCertificateTags;
 	}
 
 	@Override
