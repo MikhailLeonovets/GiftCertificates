@@ -9,8 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Code refactored">
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateSpringJdbcRepository refactored">
+      <change afterPath="$PROJECT_DIR$/utility/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utility/src/main/java/com/itechart/esm/utilities/converter/PostgresIntervalConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilities/src/main/java/com/itechart/esm/utilities/converter/PostgresIntervalConverter.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utility" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -250,7 +255,7 @@
       <workItem from="1647516668679" duration="9050000" />
       <workItem from="1647587403461" duration="23478000" />
       <workItem from="1647847567878" duration="20873000" />
-      <workItem from="1647933394157" duration="12945000" />
+      <workItem from="1647933394157" duration="13129000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -441,7 +446,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647955777648</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="GiftCertificateSpringJdbcRepository refactored">
+      <created>1647956417551</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1647956417551</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificate entity created&#10;Tag entity created&#10;GiftCertificateBuilder created" />
     <MESSAGE value="GiftCertificateRepository created&#10;TagRepository created" />
     <MESSAGE value="Repository interfaces created" />
     <MESSAGE value="workspace.xml updated" />
@@ -484,6 +495,7 @@
     <MESSAGE value="SpringConfig updated" />
     <MESSAGE value="TagSpringJdbcRepository updated" />
     <MESSAGE value="Code refactored" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactored" />
+    <MESSAGE value="GiftCertificateSpringJdbcRepository refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateSpringJdbcRepository refactored" />
   </component>
 </project>

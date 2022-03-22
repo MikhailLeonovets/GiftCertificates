@@ -81,6 +81,6 @@
         <module>repository</module>
         <module>service</module>
         <module>controller</module>
-        <module>utilities</module>
+        <module>utility</module>
     </modules>
 </project>
