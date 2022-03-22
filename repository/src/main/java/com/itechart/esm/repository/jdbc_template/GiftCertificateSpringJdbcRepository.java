@@ -50,11 +50,12 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 		jdbcTemplate.update(con -> {
 			PreparedStatement preparedStatement = con.prepareStatement(INSERT_GIFT_CERTIFICATE_QUERY,
 					new String[]{"id"});
-			preparedStatement.setString(1, giftCertificate.getName()); //TODO 1, 2...
-			preparedStatement.setString(2, giftCertificate.getDescription());
-			preparedStatement.setBigDecimal(3, giftCertificate.getPrice());
-			preparedStatement.setTimestamp(4, Timestamp.valueOf(giftCertificate.getDateOfCreation()));
-			preparedStatement.setObject(5,
+			int i = 1; // number of parameter
+			preparedStatement.setString(i++, giftCertificate.getName());
+			preparedStatement.setString(i++, giftCertificate.getDescription());
+			preparedStatement.setBigDecimal(i++, giftCertificate.getPrice());
+			preparedStatement.setTimestamp(i++, Timestamp.valueOf(giftCertificate.getDateOfCreation()));
+			preparedStatement.setObject(i++,
 					PostgresIntervalConverter.convertTimePeriodToPGInterval(giftCertificate.getExpirationPeriod()),
 					Types.OTHER);
 			return preparedStatement;
