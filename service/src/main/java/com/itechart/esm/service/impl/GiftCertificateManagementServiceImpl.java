@@ -92,17 +92,17 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 				.stream()
 				.map(GiftCertificateTag::getTag).collect(Collectors.toSet());
 		saveTagsAttachedToGiftCertificate(giftCertificate, actualTags, databaseTags);
-		deleteTagsAttachedTOGiftCertificate(giftCertificate, actualTags, databaseTags);
+		deleteTagsAttachedToGiftCertificate(giftCertificate, actualTags, databaseTags);
 	}
 
-	private void deleteTagsAttachedTOGiftCertificate(GiftCertificate giftCertificate,
+	private void deleteTagsAttachedToGiftCertificate(GiftCertificate giftCertificate,
 	                                                 Set<Tag> actualTags, Set<Tag> databaseTags)
 			throws GiftCertificateTagNotFoundException, DataInputException {
 		for (Tag tagToDelete : databaseTags) {
 			if (!actualTags.contains(tagToDelete)) {
 				GiftCertificateTag giftCertificateTag =
-						giftCertificateTagService.findByTagIdAndGiftCertificateId(giftCertificate.getId(),
-								tagToDelete.getId());
+						giftCertificateTagService.findByTagIdAndGiftCertificateId(tagToDelete.getId(),
+								giftCertificate.getId());
 				giftCertificateTagService.delete(giftCertificateTag);
 			}
 		}

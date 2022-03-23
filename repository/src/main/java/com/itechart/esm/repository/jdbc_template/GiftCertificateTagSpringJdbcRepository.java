@@ -44,8 +44,9 @@ public class GiftCertificateTagSpringJdbcRepository implements GiftCertificateTa
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(con -> {
 			PreparedStatement preparedStatement = con.prepareStatement(INSERT_QUERY, new String[]{"id"});
-			preparedStatement.setLong(1, giftCertificateTag.getGiftCertificate().getId());
-			preparedStatement.setLong(2, giftCertificateTag.getTag().getId());
+			int i = 1; // number of parameter in the query
+			preparedStatement.setLong(i++, giftCertificateTag.getGiftCertificate().getId());
+			preparedStatement.setLong(i++, giftCertificateTag.getTag().getId());
 			return preparedStatement;
 		}, keyHolder);
 		giftCertificateTag.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
