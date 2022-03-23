@@ -24,7 +24,7 @@ import java.util.List;
 @RestController
 @RequestMapping
 @PropertySource("classpath:response_msg.properties")
-public class GiftCertificateController {
+public class GiftCertificateCrudController {
 	private static final String URL_MAIN_GIFT_CERT_PAGE = "/gift-certificate";
 	private static final String URL_GET_ALL_GIFT_CERT = "";
 	private static final String URL_GET_BY_ID_GIFT_CERT = "/{id}";
@@ -42,7 +42,7 @@ public class GiftCertificateController {
 	private final GiftCertificateManagementService giftCertificateManagementService;
 
 	@Autowired
-	public GiftCertificateController(GiftCertificateManagementService giftCertificateManagementService) {
+	public GiftCertificateCrudController(GiftCertificateManagementService giftCertificateManagementService) {
 		this.giftCertificateManagementService = giftCertificateManagementService;
 	}
 
