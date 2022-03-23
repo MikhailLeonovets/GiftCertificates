@@ -46,7 +46,7 @@ public class GiftCertificateController {
 		this.giftCertificateManagementService = giftCertificateManagementService;
 	}
 
-	@GetMapping(URL_MAIN_GIFT_CERT_PAGE + URL_GET_ALL_GIFT_CERT)
+	@GetMapping(value = URL_MAIN_GIFT_CERT_PAGE + URL_GET_ALL_GIFT_CERT, produces = "application/json")
 	public List<GiftCertificateAndItsTags> getGiftCertificates() throws TagNotFoundException,
 			GiftCertificateNotFoundException, DataInputException {
 		return giftCertificateManagementService.findAll();

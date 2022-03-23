@@ -5,6 +5,7 @@ import com.itechart.esm.repository.entity.GiftCertificate;
 import com.itechart.esm.repository.mapper.GiftCertificateMapper;
 import com.itechart.esm.utilities.converter.PostgresIntervalConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -20,8 +21,8 @@ import java.util.Optional;
 @Repository
 public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepository {
 	private static final String INSERT_GIFT_CERTIFICATE_QUERY
-			= "INSERT INTO gift_certificate (name, description, price, date_of_creation, duration) " +
-			"VALUES (?, ?, ?, ?, ?)";
+			= "INSERT INTO gift_certificate (name, description, price, duration) " +
+			"VALUES (?, ?, ?, ?)";
 	private static final String SELECT_ALL_GIFT_CERTIFICATE_QUERY
 			= "SELECT * FROM gift_certificate";
 	private static final String SELECT_GIFT_CERTIFICATE_BY_ID_QUERY
@@ -54,7 +55,6 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 			preparedStatement.setString(i++, giftCertificate.getName());
 			preparedStatement.setString(i++, giftCertificate.getDescription());
 			preparedStatement.setBigDecimal(i++, giftCertificate.getPrice());
-			preparedStatement.setTimestamp(i++, Timestamp.valueOf(giftCertificate.getDateOfCreation()));
 			preparedStatement.setObject(i++,
 					PostgresIntervalConverter.convertTimePeriodToPGInterval(giftCertificate.getExpirationPeriod()),
 					Types.OTHER);
@@ -71,8 +71,12 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 
 	@Override
 	public Optional<GiftCertificate> findById(Long id) {
-		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_GIFT_CERTIFICATE_BY_ID_QUERY,
-				new GiftCertificateMapper(), id));
+		try {
+			return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_GIFT_CERTIFICATE_BY_ID_QUERY,
+					new GiftCertificateMapper(), id));
+		} catch (EmptyResultDataAccessException e) {
+			return Optional.empty();
+		}
 	}
 
 	@Override

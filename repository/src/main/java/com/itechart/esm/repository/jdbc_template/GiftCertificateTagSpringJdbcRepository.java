@@ -6,6 +6,7 @@ import com.itechart.esm.repository.entity.GiftCertificateTag;
 import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.repository.mapper.GiftCertificateTagMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -58,7 +59,12 @@ public class GiftCertificateTagSpringJdbcRepository implements GiftCertificateTa
 
 	@Override
 	public Optional<GiftCertificateTag> findById(Long id) {
-		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_ID_QUERY, new GiftCertificateTagMapper(), id));
+		try {
+			return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_ID_QUERY,
+					new GiftCertificateTagMapper(), id));
+		} catch (EmptyResultDataAccessException e) {
+			return Optional.empty();
+		}
 	}
 
 	@Override
@@ -74,9 +80,13 @@ public class GiftCertificateTagSpringJdbcRepository implements GiftCertificateTa
 
 	@Override
 	public Optional<GiftCertificateTag> findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId) {
-		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_TAG_ID_AND_GIFT_CERTIFICATE_ID_QUERY,
-				new GiftCertificateTagMapper(),
-				tagId, giftCertificateId));
+		try {
+			return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_TAG_ID_AND_GIFT_CERTIFICATE_ID_QUERY,
+					new GiftCertificateTagMapper(),
+					tagId, giftCertificateId));
+		} catch (EmptyResultDataAccessException e) {
+			return Optional.empty();
+		}
 	}
 
 	@Override

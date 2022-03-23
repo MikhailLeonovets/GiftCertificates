@@ -4,12 +4,12 @@ import com.itechart.esm.repository.TagRepository;
 import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.repository.mapper.TagMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
-import javax.sql.DataSource;
 import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Objects;
@@ -45,7 +45,8 @@ public class TagSpringJdbcRepository implements TagRepository {
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 		jdbcTemplate.update(con -> {
 			PreparedStatement preparedStatement = con.prepareStatement(INSERT_TAG_QUERY, new String[]{"id"});
-			preparedStatement.setString(1, tag.getName());
+			int i = 1; // number of parameter in the query
+			preparedStatement.setString(i++, tag.getName());
 			return preparedStatement;
 		}, keyHolder);
 		tag.setId(Objects.requireNonNull(keyHolder.getKey()).longValue());
@@ -59,12 +60,20 @@ public class TagSpringJdbcRepository implements TagRepository {
 
 	@Override
 	public Optional<Tag> findById(Long id) {
-		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_TAG_BY_ID, new TagMapper(), id));
+		try {
+			return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_TAG_BY_ID, new TagMapper(), id));
+		} catch (EmptyResultDataAccessException e) {
+			return Optional.empty();
+		}
 	}
 
 	@Override
 	public Optional<Tag> findByName(String name) {
-		return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_NAME_QUERY, new TagMapper(), name));
+		try {
+			return Optional.ofNullable(jdbcTemplate.queryForObject(SELECT_BY_NAME_QUERY, new TagMapper(), name));
+		} catch (EmptyResultDataAccessException e) {
+			return Optional.empty();
+		}
 	}
 
 	@Override
