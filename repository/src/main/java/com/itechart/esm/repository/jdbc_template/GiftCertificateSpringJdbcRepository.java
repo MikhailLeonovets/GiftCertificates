@@ -12,8 +12,10 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
+import java.sql.Time;
 import java.sql.Timestamp;
 import java.sql.Types;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -83,7 +85,7 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 	public boolean update(GiftCertificate giftCertificate) {
 		return jdbcTemplate.update(UPDATE_GIFT_CERTIFICATE_QUERY, giftCertificate.getName(),
 				giftCertificate.getDescription(), giftCertificate.getPrice(),
-				Timestamp.valueOf(giftCertificate.getDateOfModification()),
+				Timestamp.valueOf(LocalDateTime.now()),
 				PostgresIntervalConverter.convertTimePeriodToPGInterval(giftCertificate.getExpirationPeriod()),
 				giftCertificate.getId()) > 0;
 	}
