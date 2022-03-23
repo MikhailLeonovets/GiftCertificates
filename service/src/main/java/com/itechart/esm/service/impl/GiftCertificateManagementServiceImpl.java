@@ -81,6 +81,34 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	}
 
 	@Override
+	public List<GiftCertificateAndItsTags> findByTag(String tagName)
+			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		Tag tag = tagService.findByName(tagName);
+		List<GiftCertificateTag> giftCertificatesTags = giftCertificateTagService.findByTag(tag);
+		List<GiftCertificate> giftCertificates = giftCertificatesTags.stream()
+				.map(GiftCertificateTag::getGiftCertificate).toList();
+		List<GiftCertificateAndItsTags> giftCertificatesAndItsTags = new ArrayList<>();
+		for (GiftCertificate giftCertificate : giftCertificates) {
+			giftCertificatesAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
+		}
+		return giftCertificatesAndItsTags;
+	}
+
+	@Override
+	public List<GiftCertificateAndItsTags> findByTag(Long tagId)
+			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		Tag tag = tagService.findById(tagId);
+		List<GiftCertificateTag> giftCertificatesTags = giftCertificateTagService.findByTag(tag);
+		List<GiftCertificate> giftCertificates = giftCertificatesTags.stream()
+				.map(GiftCertificateTag::getGiftCertificate).toList();
+		List<GiftCertificateAndItsTags> giftCertificatesAndItsTags = new ArrayList<>();
+		for (GiftCertificate giftCertificate : giftCertificates) {
+			giftCertificatesAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
+		}
+		return giftCertificatesAndItsTags;
+	}
+
+	@Override
 	public void update(GiftCertificateAndItsTags giftCertificateAndItsTags)
 			throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException,
 			GiftCertificateTagNotFoundException {

@@ -72,12 +72,12 @@ public class GiftCertificateTagServiceImpl implements GiftCertificateTagService 
 		}
 		List<GiftCertificateTag> giftCertificateTags =
 				giftCertificateTagRepository.findByTag(tag);
+		List<GiftCertificateTag> populatedGiftCertificatesTag = new ArrayList<>();
 		for (GiftCertificateTag giftCertificateTag : giftCertificateTags) {
 			GiftCertificateTag fullGiftCertificateTag = populate(giftCertificateTag);
-			giftCertificateTags.remove(giftCertificateTag);
-			giftCertificateTags.add(fullGiftCertificateTag);
+			populatedGiftCertificatesTag.add(fullGiftCertificateTag);
 		}
-		return giftCertificateTags;
+		return populatedGiftCertificatesTag;
 	}
 
 	@Override

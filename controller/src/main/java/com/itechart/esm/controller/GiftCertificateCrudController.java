@@ -23,7 +23,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping
-@PropertySource("classpath:response_msg.properties")
+@PropertySource("classpath:response_msg_success.properties")
 public class GiftCertificateCrudController {
 	private static final String URL_MAIN_GIFT_CERT_PAGE = "/gift-certificate";
 	private static final String URL_GET_ALL_GIFT_CERT = "";
@@ -38,6 +38,8 @@ public class GiftCertificateCrudController {
 	private String giftCertificateCreatedSuccessfully;
 	@Value("${gift_certificate.updated}")
 	private String giftCertificateUpdatedSuccessfully;
+	@Value("${gift_certificate.empty_list}")
+	private String giftCertificateEmptyListMsg;
 
 	private final GiftCertificateManagementService giftCertificateManagementService;
 
@@ -47,15 +49,19 @@ public class GiftCertificateCrudController {
 	}
 
 	@GetMapping(value = URL_MAIN_GIFT_CERT_PAGE + URL_GET_ALL_GIFT_CERT, produces = "application/json")
-	public List<GiftCertificateAndItsTags> getGiftCertificates() throws TagNotFoundException,
+	public ResponseEntity<?> getGiftCertificates() throws TagNotFoundException,
 			GiftCertificateNotFoundException, DataInputException {
-		return giftCertificateManagementService.findAll();
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = giftCertificateManagementService.findAll();
+		if (giftCertificateAndItsTags.isEmpty()) {
+			return ResponseEntity.ok(giftCertificateEmptyListMsg);
+		}
+		return ResponseEntity.ok(giftCertificateManagementService.findAll());
 	}
 
 	@GetMapping(URL_MAIN_GIFT_CERT_PAGE + URL_GET_BY_ID_GIFT_CERT)
-	public GiftCertificateAndItsTags getGiftCertificate(@PathVariable Long id) throws GiftCertificateNotFoundException,
+	public ResponseEntity<?> getGiftCertificate(@PathVariable Long id) throws GiftCertificateNotFoundException,
 			TagNotFoundException, DataInputException {
-		return giftCertificateManagementService.findById(id);
+		return ResponseEntity.ok(giftCertificateManagementService.findById(id));
 	}
 
 	@DeleteMapping(URL_MAIN_GIFT_CERT_PAGE + URL_DELETE_GIFT_CERT)
