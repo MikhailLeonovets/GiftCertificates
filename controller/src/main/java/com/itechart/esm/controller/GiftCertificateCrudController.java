@@ -21,18 +21,20 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_CREATE_GIFT_CERT;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_DELETE_GIFT_CERT;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_GET_ALL_GIFT_CERT;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_GET_BY_ID_GIFT_CERT;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_GIFT_CERT_SORT_DATE;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_GIFT_CERT_SORT_NAME;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_MAIN_GIFT_CERT_PAGE;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_UPDATE_GIFT_CERT;
+
 @RestController
 @RequestMapping
 @PropertySource("classpath:response_msg_success.properties")
 public class GiftCertificateCrudController {
-	private static final String URL_MAIN_GIFT_CERT_PAGE = "/gift-certificate";
-	private static final String URL_GET_ALL_GIFT_CERT = "";
-	private static final String URL_GET_BY_ID_GIFT_CERT = "/{id}";
-	private static final String URL_DELETE_GIFT_CERT = "/{id}";
-	private static final String URL_CREATE_GIFT_CERT = "";
-	private static final String URL_UPDATE_GIFT_CERT = "/{id}";
-	private static final String URL_GIFT_CERT_SORT_DATE = "/sort/date";
-	private static final String URL_GIFT_CERT_SORT_NAME = "/sort/name";
+
 
 	@Value("${gift_certificate.deleted}")
 	private String giftCertificateDeletedSuccessfully;

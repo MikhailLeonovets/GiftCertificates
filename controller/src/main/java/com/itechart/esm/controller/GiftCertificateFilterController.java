@@ -16,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_GIFT_CERT_BY_TAG_ID_PAGE;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_MAIN_GIFT_CERT_FILTER_PAGE;
+
 @RestController
 @RequestMapping
 @PropertySource("classpath:response_msg_success.properties")
 public class GiftCertificateFilterController {
-	private static final String URL_MAIN_GIFT_CERT_PAGE = "/gift-certificate/filter";
-	private static final String URL_GIFT_CERT_BY_TAG_ID_PAGE = "/tag/{id}";
-
 	@Value("${gift_certificate.empty.by.tag}")
 	private String GIFT_CERT_LIST_BY_TAG_EMPTY_MSG;
 
@@ -33,7 +33,7 @@ public class GiftCertificateFilterController {
 		this.giftCertificateManagementService = giftCertificateManagementService;
 	}
 
-	@GetMapping(URL_MAIN_GIFT_CERT_PAGE + URL_GIFT_CERT_BY_TAG_ID_PAGE)
+	@GetMapping(URL_MAIN_GIFT_CERT_FILTER_PAGE + URL_GIFT_CERT_BY_TAG_ID_PAGE)
 	public ResponseEntity<?> getGiftCertificateByTag(@PathVariable Long id) throws TagNotFoundException,
 			GiftCertificateNotFoundException, DataInputException {
 		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = giftCertificateManagementService.findByTag(id);

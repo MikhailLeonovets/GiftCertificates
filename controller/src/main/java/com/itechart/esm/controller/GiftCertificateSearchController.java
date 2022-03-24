@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_MAIN_SEARCH_GIFT_CERT_PAGE;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_SEARCH_BY_PART_OF_DESCRIPTION;
+import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_SEARCH_BY_PART_OF_NAME;
+
 @RequestMapping
 @RestController
 @PropertySource("classpath:response_msg_success.properties")
 public class GiftCertificateSearchController {
-	private static final String URL_MAIN_SEARCH_GIFT_CERT_PAGE = "/gift-certificate/search";
-	private static final String URL_SEARCH_BY_PART_OF_NAME = "/name/{name}";
-	private static final String URL_SEARCH_BY_PART_OF_DESCRIPTION = "/description/{description}";
-
 	@Value("${gift_certificate.empty.by.name}")
 	private String GIFT_CERT_LIST_BY_NAME_EMPTY_MSG;
 	@Value("${gift_certificate.empty.by.description}")
