@@ -1,6 +1,5 @@
 package com.itechart.esm.service;
 
-import com.itechart.esm.repository.entity.GiftCertificate;
 import com.itechart.esm.repository.entity.Tag;
 import com.itechart.esm.service.exception.DataInputException;
 import com.itechart.esm.service.exception.GiftCertificateNotFoundException;
@@ -17,6 +16,12 @@ public interface GiftCertificateManagementService {
 	List<GiftCertificateAndItsTags> findAll() throws DataInputException, TagNotFoundException,
 			GiftCertificateNotFoundException;
 
+	List<GiftCertificateAndItsTags> findAllSortByDateOfCreation()
+			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException;
+
+	List<GiftCertificateAndItsTags> findAllSortByName()
+			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException;
+
 	GiftCertificateAndItsTags findById(Long id) throws GiftCertificateNotFoundException, DataInputException,
 			TagNotFoundException;
 
@@ -29,9 +34,11 @@ public interface GiftCertificateManagementService {
 	List<GiftCertificateAndItsTags> findByTag(Long tagId) throws DataInputException, TagNotFoundException,
 			GiftCertificateNotFoundException;
 
-	List<GiftCertificateAndItsTags> findByPartOfName(String name) throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
+	List<GiftCertificateAndItsTags> findByPartOfName(String name)
+			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
 
-	List<GiftCertificateAndItsTags> findByPartOfDescription(String description) throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
+	List<GiftCertificateAndItsTags> findByPartOfDescription(String description)
+			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException;
 
 	void update(GiftCertificateAndItsTags giftCertificateAndItsTags) throws GiftCertificateNotFoundException,
 			DataInputException, TagNotFoundException, GiftCertificateTagNotFoundException;

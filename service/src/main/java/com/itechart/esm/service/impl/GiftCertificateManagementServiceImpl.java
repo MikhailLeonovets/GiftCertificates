@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -59,6 +60,30 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 			giftCertificatesAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
 		}
 		return giftCertificatesAndItsTags;
+	}
+
+	@Override
+	public List<GiftCertificateAndItsTags> findAllSortByDateOfCreation()
+			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException {
+		List<GiftCertificate> giftCertificates = giftCertificateService.findAll();
+		giftCertificates.sort(Comparator.comparing(GiftCertificate::getDateOfCreation));
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
+		for (GiftCertificate giftCertificate : giftCertificates) {
+			giftCertificateAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
+		}
+		return giftCertificateAndItsTags;
+	}
+
+	@Override
+	public List<GiftCertificateAndItsTags> findAllSortByName()
+			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException {
+		List<GiftCertificate> giftCertificates = giftCertificateService.findAll();
+		giftCertificates.sort(Comparator.comparing(GiftCertificate::getName));
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
+		for (GiftCertificate giftCertificate : giftCertificates) {
+			giftCertificateAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
+		}
+		return giftCertificateAndItsTags;
 	}
 
 	@Override

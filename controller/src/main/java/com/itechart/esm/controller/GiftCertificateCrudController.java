@@ -31,6 +31,8 @@ public class GiftCertificateCrudController {
 	private static final String URL_DELETE_GIFT_CERT = "/{id}";
 	private static final String URL_CREATE_GIFT_CERT = "";
 	private static final String URL_UPDATE_GIFT_CERT = "/{id}";
+	private static final String URL_GIFT_CERT_SORT_DATE = "/sort/date";
+	private static final String URL_GIFT_CERT_SORT_NAME = "/sort/name";
 
 	@Value("${gift_certificate.deleted}")
 	private String giftCertificateDeletedSuccessfully;
@@ -85,5 +87,27 @@ public class GiftCertificateCrudController {
 			DataInputException {
 		giftCertificateManagementService.update(giftCertificateAndItsTags);
 		return ResponseEntity.ok(giftCertificateUpdatedSuccessfully);
+	}
+
+	@GetMapping(URL_MAIN_GIFT_CERT_PAGE + URL_GIFT_CERT_SORT_DATE)
+	public ResponseEntity<?> getGiftCertificatesSortByDate()
+			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException {
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTagsList =
+				giftCertificateManagementService.findAllSortByDateOfCreation();
+		if (giftCertificateAndItsTagsList.isEmpty()) {
+			return ResponseEntity.ok(giftCertificateEmptyListMsg);
+		}
+		return ResponseEntity.ok(giftCertificateAndItsTagsList);
+	}
+
+	@GetMapping(URL_MAIN_GIFT_CERT_PAGE + URL_GIFT_CERT_SORT_NAME)
+	public ResponseEntity<?> getGiftCertificatesSortByName()
+			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException {
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTags =
+				giftCertificateManagementService.findAllSortByName();
+		if (giftCertificateAndItsTags.isEmpty()) {
+			return ResponseEntity.ok(giftCertificateEmptyListMsg);
+		}
+		return ResponseEntity.ok(giftCertificateAndItsTags);
 	}
 }
