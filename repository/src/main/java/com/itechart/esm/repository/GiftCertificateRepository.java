@@ -13,6 +13,10 @@ public interface GiftCertificateRepository {
 
 	Optional<GiftCertificate> findById(Long id);
 
+	List<GiftCertificate> findByPartOfName(String name);
+
+	List<GiftCertificate> findByPartOfDescription(String description);
+
 	boolean update(GiftCertificate giftCertificate);
 
 	boolean delete(GiftCertificate giftCertificate);

@@ -12,7 +12,6 @@ import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
 import java.sql.PreparedStatement;
-import java.sql.Time;
 import java.sql.Timestamp;
 import java.sql.Types;
 import java.time.LocalDateTime;
@@ -39,6 +38,10 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 			"WHERE id =?";
 	private static final String DELETE_GIFT_CERTIFICATE_BY_ID_QUERY
 			= "DELETE FROM gift_certificate WHERE id = ?";
+	private static final String FIND_GIFT_CERT_BY_PART_OF_NAME_QUERY
+			= "SELECT * FROM gift_certificate WHERE name ~* ";
+	private static final String FIND_GIFT_CERT_BY_PART_OF_DESCRIPTION_QUERY
+			= "SELECT * FROM gift_certificate WHERE description ~* ";
 
 	private final JdbcTemplate jdbcTemplate;
 
@@ -79,6 +82,18 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 		} catch (EmptyResultDataAccessException e) {
 			return Optional.empty();
 		}
+	}
+
+	@Override
+	public List<GiftCertificate> findByPartOfName(String name) {
+		String query = FIND_GIFT_CERT_BY_PART_OF_NAME_QUERY + "'" + name + "'";
+		return jdbcTemplate.query(query, new GiftCertificateMapper());
+	}
+
+	@Override
+	public List<GiftCertificate> findByPartOfDescription(String description) {
+		String query = FIND_GIFT_CERT_BY_PART_OF_DESCRIPTION_QUERY + "'" + description + "'";
+		return jdbcTemplate.query(query, new GiftCertificateMapper());
 	}
 
 	@Override

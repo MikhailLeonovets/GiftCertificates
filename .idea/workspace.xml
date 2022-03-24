@@ -9,14 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateCrudController renamed from GiftCertificateController">
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateFilterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/src/main/resources/response_msg_fail.properties" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateFilterController created&#10;Services updated">
+      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateSearchController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/resources/response_msg.properties" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/resources/response_msg_success.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateFilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateFilterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/resources/response_msg_success.properties" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/resources/response_msg_success.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +261,8 @@
       <workItem from="1647587403461" duration="23478000" />
       <workItem from="1647847567878" duration="20873000" />
       <workItem from="1647933394157" duration="16635000" />
-      <workItem from="1648020295316" duration="16953000" />
+      <workItem from="1648020295316" duration="19644000" />
+      <workItem from="1648106453158" duration="10712000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -491,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648043544580</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="GiftCertificateFilterController created&#10;Services updated">
+      <created>1648045210366</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1648045210366</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="TagMapper created&#10;TagSpringJdbcRepository updated" />
     <MESSAGE value="GiftCertificateTag created&#10;GiftCertificate updated" />
     <MESSAGE value="GiftCertificateTagRepository created&#10;Repositories updated" />
     <MESSAGE value="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created" />
@@ -534,6 +544,7 @@
     <MESSAGE value="GiftCertificateTagSpringJdbcRepository updated" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository updated: date of modification" />
     <MESSAGE value="GiftCertificateCrudController renamed from GiftCertificateController" />
-    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateCrudController renamed from GiftCertificateController" />
+    <MESSAGE value="GiftCertificateFilterController created&#10;Services updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateFilterController created&#10;Services updated" />
   </component>
 </project>

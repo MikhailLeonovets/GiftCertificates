@@ -20,8 +20,7 @@ import java.util.List;
 @RequestMapping
 @PropertySource("classpath:response_msg_success.properties")
 public class GiftCertificateFilterController {
-	private static final String URL_MAIN_GIFT_CERT_PAGE = "/gift-certificate";
-	private static final String URL_GIFT_CERT_BY_TAG_NAME_PAGE = "/tag/{tag_name}";
+	private static final String URL_MAIN_GIFT_CERT_PAGE = "/gift-certificate/filter";
 	private static final String URL_GIFT_CERT_BY_TAG_ID_PAGE = "/tag/{id}";
 
 	@Value("${gift_certificate.empty.by.tag}")

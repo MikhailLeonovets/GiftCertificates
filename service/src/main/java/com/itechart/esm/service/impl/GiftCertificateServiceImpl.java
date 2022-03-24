@@ -41,6 +41,22 @@ public class GiftCertificateServiceImpl implements GiftCertificateService {
 	}
 
 	@Override
+	public List<GiftCertificate> findByPartOfName(String name) throws DataInputException {
+		if (name == null || name.isEmpty()) {
+			throw new DataInputException();
+		}
+		return giftCertificateRepository.findByPartOfName(name);
+	}
+
+	@Override
+	public List<GiftCertificate> findByPartOfDescription(String description) throws DataInputException {
+		if (description == null || description.isEmpty()){
+			throw new DataInputException();
+		}
+		return giftCertificateRepository.findByPartOfDescription(description);
+	}
+
+	@Override
 	public void update(GiftCertificate giftCertificate) throws GiftCertificateNotFoundException, DataInputException {
 		if (giftCertificate == null) {
 			throw new DataInputException();

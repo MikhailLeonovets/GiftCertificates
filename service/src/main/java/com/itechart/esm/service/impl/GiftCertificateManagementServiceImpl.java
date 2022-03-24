@@ -109,6 +109,28 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	}
 
 	@Override
+	public List<GiftCertificateAndItsTags> findByPartOfName(String name)
+			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		List<GiftCertificate> giftCertificates = giftCertificateService.findByPartOfName(name);
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
+		for (GiftCertificate giftCertificate : giftCertificates) {
+			giftCertificateAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
+		}
+		return giftCertificateAndItsTags;
+	}
+
+	@Override
+	public List<GiftCertificateAndItsTags> findByPartOfDescription(String description)
+			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		List<GiftCertificate> giftCertificates = giftCertificateService.findByPartOfDescription(description);
+		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
+		for (GiftCertificate giftCertificate : giftCertificates) {
+			giftCertificateAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
+		}
+		return giftCertificateAndItsTags;
+	}
+
+	@Override
 	public void update(GiftCertificateAndItsTags giftCertificateAndItsTags)
 			throws GiftCertificateNotFoundException, DataInputException, TagNotFoundException,
 			GiftCertificateTagNotFoundException {
