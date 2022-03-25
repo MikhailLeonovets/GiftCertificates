@@ -9,11 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Feature sort gift certificates created">
-      <change afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/storage/url/GiftCertificateUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateFilterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateFilterController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateSearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateSearchController.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Controllers refactored">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +60,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/utility" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -256,7 +255,9 @@
       <workItem from="1647847567878" duration="20873000" />
       <workItem from="1647933394157" duration="16635000" />
       <workItem from="1648020295316" duration="19644000" />
-      <workItem from="1648106453158" duration="14977000" />
+      <workItem from="1648106453158" duration="16074000" />
+      <workItem from="1648192186112" duration="983000" />
+      <workItem from="1648197422006" duration="6159000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -510,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648134754325</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Controllers refactored">
+      <created>1648135302029</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1648135302029</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +536,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created" />
     <MESSAGE value="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl" />
     <MESSAGE value="DataInputException created&#10;GiftCertificateService updated&#10;GiftCertificateTagNotFoundException created&#10;GiftCertificateTagService created&#10;GiftCertificateTagServiceImpl created" />
     <MESSAGE value="GiftCertificateAndItsTags created&#10;GiftCertificateManagementService created" />
@@ -553,6 +560,7 @@
     <MESSAGE value="GiftCertificateFilterController created&#10;Services updated" />
     <MESSAGE value="Searching by name/description feature created" />
     <MESSAGE value="Feature sort gift certificates created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature sort gift certificates created" />
+    <MESSAGE value="Controllers refactored" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controllers refactored" />
   </component>
 </project>
