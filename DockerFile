@@ -1,0 +1,7 @@
+FROM
+WORKDIR /tmp/
+COPY pom.xml /tmp/
+COPY controller /tmp/controller/
+COPY repository /tmp/repository/
+COPY service /tmp/service/
+COPY utility /tmp/utility/
