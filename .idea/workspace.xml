@@ -9,8 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="some commit">
+      <change afterPath="$PROJECT_DIR$/docker/jenkins/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/application/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +70,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\docker\application" />
+      <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates" />
       <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\controller\src\main\java\com\itechart\esm\controller" />
       <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\controller" />
     </key>
@@ -75,7 +81,7 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.jenkins: Compose Deployment">
     <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -241,39 +247,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
-      <deployment type="docker-image">
-        <settings>
-          <option name="imageTag" value="postgres:latest" />
-          <option name="containerName" value="app-db" />
-          <option name="envVars">
-            <list>
-              <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_PASSWORD" />
-                <option name="value" value="root" />
-              </DockerEnvVarImpl>
-              <DockerEnvVarImpl>
-                <option name="name" value="POSTGRES_DATABASE" />
-                <option name="value" value="esm-database" />
-              </DockerEnvVarImpl>
-            </list>
-          </option>
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="DockerFile build" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="maven3.8.4-jdk-17-slim_build" />
-          <option name="buildCliOptions" value="--target build" />
-          <option name="buildKitEnabled" value="true" />
-          <option name="buildOnly" value="true" />
-          <option name="sourceFilePath" value="DockerFile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="app" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -301,6 +274,32 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.dind: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="dind" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.jenkins: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -315,20 +314,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.DockerFile build" />
-      <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.app" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.dind: Compose Deployment" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.dind: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
         <item itemvalue="Docker.app" />
-        <item itemvalue="Docker.Docker Image" />
-        <item itemvalue="Docker.DockerFile build" />
       </list>
     </recent_temporary>
   </component>
@@ -362,6 +361,7 @@
       <workItem from="1648561984158" duration="4551000" />
       <workItem from="1648624434910" duration="10097000" />
       <workItem from="1648710746634" duration="6476000" />
+      <workItem from="1648731157617" duration="9352000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -671,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648720245848</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="some commit">
+      <created>1648731560577</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1648731560577</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -689,7 +696,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="code refactored" />
     <MESSAGE value="gift_certificate_url.properties created" />
     <MESSAGE value="GiftCertificateManagementService updated with find by id &#10;response_msg.properties created&#10;gift_certificate_url.properties deleted" />
     <MESSAGE value="GiftCertificateController update with base functions of CRUD" />
@@ -714,6 +720,7 @@
     <MESSAGE value="sql script of creating database added" />
     <MESSAGE value="Jenkinsfile created&#10;docker-compose.yml updated" />
     <MESSAGE value="Jenkinsfile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
+    <MESSAGE value="some commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="some commit" />
   </component>
 </project>
