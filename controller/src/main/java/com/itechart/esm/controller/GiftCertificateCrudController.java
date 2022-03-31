@@ -35,7 +35,6 @@ import static com.itechart.esm.controller.storage.url.GiftCertificateUrl.URL_UPD
 @PropertySource("classpath:response_msg_success.properties")
 public class GiftCertificateCrudController {
 
-
 	@Value("${gift_certificate.deleted}")
 	private String giftCertificateDeletedSuccessfully;
 	@Value("${gift_certificate.created}")

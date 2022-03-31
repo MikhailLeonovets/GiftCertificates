@@ -13,3 +13,13 @@ services:
       - "8080:8080"
     depends_on:
       - app-db
+  jenkins:
+    image: jenkins/jenkins
+    ports:
+      - "8081:8080"
+      - "50000:50000"
+    container_name: app-jenkins
+    volumes:
+      - ~/jenkins:/var/jenkins_home
+      - ./var/run/docker.sock:/var/run/docker.sock
+      - ./usr/bin/docker:/usr/bin/docker

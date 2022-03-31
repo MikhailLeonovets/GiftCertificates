@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="DockerFile added">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="sql script of creating database added">
+      <change afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DockerFile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/config/SpringJdbcConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,16 +299,31 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.jenkins: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="jenkins" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.DockerFile build" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
       <item itemvalue="Docker.Docker Image" />
       <item itemvalue="Docker.app" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
         <item itemvalue="Docker.app" />
         <item itemvalue="Docker.Docker Image" />
         <item itemvalue="Docker.DockerFile build" />
@@ -338,7 +352,14 @@
       <workItem from="1648197422006" duration="14302000" />
       <workItem from="1648451023233" duration="1330000" />
       <workItem from="1648453688570" duration="7607000" />
-      <workItem from="1648463716787" duration="8206000" />
+      <workItem from="1648463716787" duration="10828000" />
+      <workItem from="1648537777728" duration="5245000" />
+      <workItem from="1648555636727" duration="3427000" />
+      <workItem from="1648560086047" duration="1188000" />
+      <workItem from="1648561336747" duration="449000" />
+      <workItem from="1648561984158" duration="4551000" />
+      <workItem from="1648624434910" duration="10097000" />
+      <workItem from="1648710746634" duration="1718000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -613,7 +634,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648221126057</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="docker-compose.yml created&#10;Dockerfile renamed&#10;database.properties updated">
+      <created>1648474346780</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1648474346780</updated>
+    </task>
+    <task id="LOCAL-00041" summary="sql scripts added">
+      <created>1648474382603</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1648474382603</updated>
+    </task>
+    <task id="LOCAL-00042" summary="sql script of creating database added">
+      <created>1648474404481</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1648474404481</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -631,9 +673,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificateAndItsTags created&#10;GiftCertificateManagementService created" />
-    <MESSAGE value="Services updated&#10;GiftCertificateManagementService created and implemented" />
-    <MESSAGE value="GiftCertificateManagementService updated" />
     <MESSAGE value="update - todo" />
     <MESSAGE value="Created CRUD operations with Gift Certificate which are for user's features" />
     <MESSAGE value="code refactored" />
@@ -656,6 +695,9 @@
     <MESSAGE value="Controllers refactored" />
     <MESSAGE value="some changes" />
     <MESSAGE value="DockerFile added" />
-    <option name="LAST_COMMIT_MESSAGE" value="DockerFile added" />
+    <MESSAGE value="docker-compose.yml created&#10;Dockerfile renamed&#10;database.properties updated" />
+    <MESSAGE value="sql scripts added" />
+    <MESSAGE value="sql script of creating database added" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql script of creating database added" />
   </component>
 </project>
