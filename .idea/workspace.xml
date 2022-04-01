@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="some commit">
-      <change afterPath="$PROJECT_DIR$/docker/jenkins/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/application/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/application/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +69,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\docker\application" />
       <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates" />
+      <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\docker\application" />
       <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\controller\src\main\java\com\itechart\esm\controller" />
       <recent name="D:\MikhailLeonovets\LearningTasks\GiftCertificates\controller" />
     </key>
@@ -247,28 +246,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
         <settings>
-          <option name="imageTag" value="app:1.0" />
-          <option name="containerName" value="app" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="8080" />
-                <option name="hostIp" value="127.0.0.1" />
-                <option name="hostPort" value="8080" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="sourceFilePath" value="DockerFile" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.app-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
+          <option name="services">
+            <list>
+              <option value="app-db" />
+            </list>
+          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -280,19 +273,6 @@
           <option name="services">
             <list>
               <option value="app" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="docker-compose.yml.dind: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="dind" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -313,21 +293,29 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="jenkins/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="docker/jenkins/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.app" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-      <item itemvalue="Docker.docker-compose.yml.dind: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
+      <item itemvalue="Docker.jenkins/Dockerfile" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.dind: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-        <item itemvalue="Docker.app" />
+        <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -362,6 +350,10 @@
       <workItem from="1648624434910" duration="10097000" />
       <workItem from="1648710746634" duration="6476000" />
       <workItem from="1648731157617" duration="9352000" />
+      <workItem from="1648743954722" duration="21000" />
+      <workItem from="1648798166345" duration="15019000" />
+      <workItem from="1648824165026" duration="503000" />
+      <workItem from="1648824785975" duration="2452000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -678,7 +670,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648731560577</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="some commit">
+      <created>1648743960553</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1648743960556</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

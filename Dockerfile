@@ -1,9 +1,9 @@
 FROM maven:3.8.4-openjdk-17-slim AS maven_build
-COPY ../../pom.xml /tmp/
-COPY ../../controller /tmp/controller/
-COPY ../../repository /tmp/repository/
-COPY ../../service /tmp/service/
-COPY ../../utility /tmp/utility/
+COPY pom.xml /tmp/
+COPY controller /tmp/controller/
+COPY repository /tmp/repository/
+COPY service /tmp/service/
+COPY utility /tmp/utility/
 WORKDIR /tmp/
 RUN mvn package
 
