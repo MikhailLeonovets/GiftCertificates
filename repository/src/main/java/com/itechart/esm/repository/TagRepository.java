@@ -19,4 +19,6 @@ public interface TagRepository {
 
 	boolean deleteById(Long id);
 
+	void deleteAll();
+
 }

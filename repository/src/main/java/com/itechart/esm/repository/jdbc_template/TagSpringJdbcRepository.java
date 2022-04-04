@@ -27,6 +27,8 @@ public class TagSpringJdbcRepository implements TagRepository {
 			= "DELETE FROM tag WHERE id = ?";
 	private static final String SELECT_BY_NAME_QUERY
 			= "SELECT * FROM tag WHERE name = ?";
+	private static final String DELETE_ALL_QUERY
+			= "DELETE FROM tag";
 
 	private final JdbcTemplate jdbcTemplate;
 
@@ -84,5 +86,10 @@ public class TagSpringJdbcRepository implements TagRepository {
 	@Override
 	public boolean deleteById(Long id) {
 		return jdbcTemplate.update(DELETE_TAG_BY_ID, id) > 0;
+	}
+
+	@Override
+	public void deleteAll() {
+		jdbcTemplate.update(DELETE_ALL_QUERY);
 	}
 }

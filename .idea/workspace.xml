@@ -9,15 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Dockerfile changes">
-      <change afterPath="$PROJECT_DIR$/repository/src/test/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repository/src/test/java/com/itechart/esm/repository/jdbc_template/config/TestSpringJdbcConfiguration.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created">
+      <change afterPath="$PROJECT_DIR$/repository/src/test/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/entity/GiftCertificate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/GiftCertificateSpringJdbcRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/TagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/TagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/jdbc_template/TagSpringJdbcRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -93,8 +89,8 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.itechart.esm.repository.jdbc_template.config" />
       <recent name="com.itechart.esm.repository.jdbc_template" />
+      <recent name="com.itechart.esm.repository.jdbc_template.config" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -102,7 +98,7 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GiftCertificateSpringJdbcRepositoryTest.findByPartOfDescription">
+  <component name="RunManager" selected="JUnit.TagSpringJdbcRepositoryTest.testSave">
     <configuration name="GiftCertificateSpringJdbcRepositoryTest.findByPartOfDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="repository" />
       <extension name="coverage">
@@ -145,6 +141,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.itechart.esm.repository.jdbc_template" />
       <option name="MAIN_CLASS_NAME" value="com.itechart.esm.repository.jdbc_template.GiftCertificateSpringJdbcRepositoryTest" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TagSpringJdbcRepositoryTest.testSave" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="repository" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.itechart.esm.repository.jdbc_template.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.itechart.esm.repository.jdbc_template" />
+      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.repository.jdbc_template.TagSpringJdbcRepositoryTest" />
       <option name="METHOD_NAME" value="testSave" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -316,14 +328,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.h2database: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -338,20 +342,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
       <item itemvalue="Docker.docker-compose.yml.h2database: Compose Deployment" />
       <item itemvalue="JUnit.GiftCertificateSpringJdbcRepositoryTest.testSave" />
       <item itemvalue="JUnit.GiftCertificateSpringJdbcRepositoryTest.testFindByPartOfName" />
       <item itemvalue="JUnit.GiftCertificateSpringJdbcRepositoryTest.findByPartOfDescription" />
+      <item itemvalue="JUnit.TagSpringJdbcRepositoryTest.testSave" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TagSpringJdbcRepositoryTest.testSave" />
         <item itemvalue="JUnit.GiftCertificateSpringJdbcRepositoryTest.findByPartOfDescription" />
         <item itemvalue="JUnit.GiftCertificateSpringJdbcRepositoryTest.testFindByPartOfName" />
         <item itemvalue="JUnit.GiftCertificateSpringJdbcRepositoryTest.testSave" />
         <item itemvalue="Docker.docker-compose.yml.h2database: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +394,7 @@
       <workItem from="1648798166345" duration="15019000" />
       <workItem from="1648824165026" duration="503000" />
       <workItem from="1648824785975" duration="2627000" />
-      <workItem from="1649057145554" duration="16749000" />
+      <workItem from="1649057145554" duration="17948000" />
     </task>
     <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
       <created>1647351136968</created>
@@ -721,7 +725,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648827416792</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created">
+      <created>1649078962425</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1649078962425</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -739,7 +750,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificateManagementService updated with find by id &#10;response_msg.properties created&#10;gift_certificate_url.properties deleted" />
     <MESSAGE value="GiftCertificateController update with base functions of CRUD" />
     <MESSAGE value="app config updated" />
     <MESSAGE value="SpringConfig updated" />
@@ -764,6 +774,7 @@
     <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="some commit" />
     <MESSAGE value="Dockerfile changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile changes" />
+    <MESSAGE value="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created" />
+    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created" />
   </component>
 </project>
