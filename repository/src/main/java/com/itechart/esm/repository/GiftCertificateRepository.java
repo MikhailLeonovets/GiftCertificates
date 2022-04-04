@@ -23,4 +23,6 @@ public interface GiftCertificateRepository {
 
 	boolean deleteById(Long id);
 
+	void deleteAll();
+
 }

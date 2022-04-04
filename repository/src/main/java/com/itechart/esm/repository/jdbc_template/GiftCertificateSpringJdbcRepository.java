@@ -42,6 +42,8 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 			= "SELECT * FROM gift_certificate WHERE name ~* ";
 	private static final String FIND_GIFT_CERT_BY_PART_OF_DESCRIPTION_QUERY
 			= "SELECT * FROM gift_certificate WHERE description ~* ";
+	private static final String DELETE_ALL_QUERY
+			= "DELETE FROM gift_certificate";
 
 	private final JdbcTemplate jdbcTemplate;
 
@@ -113,5 +115,10 @@ public class GiftCertificateSpringJdbcRepository implements GiftCertificateRepos
 	@Override
 	public boolean deleteById(Long id) {
 		return jdbcTemplate.update(DELETE_GIFT_CERTIFICATE_BY_ID_QUERY, id) > 0;
+	}
+
+	@Override
+	public void deleteAll() {
+		jdbcTemplate.update(DELETE_ALL_QUERY);
 	}
 }
