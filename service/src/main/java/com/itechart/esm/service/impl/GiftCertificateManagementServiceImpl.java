@@ -172,7 +172,8 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 
 	private void deleteTagsAttachedToGiftCertificate(GiftCertificate giftCertificate,
 	                                                 Set<Tag> actualTags, Set<Tag> databaseTags)
-			throws GiftCertificateTagNotFoundException, DataInputException {
+			throws GiftCertificateTagNotFoundException, DataInputException, GiftCertificateNotFoundException,
+			TagNotFoundException {
 		for (Tag tagToDelete : databaseTags) {
 			if (!actualTags.contains(tagToDelete)) {
 				GiftCertificateTag giftCertificateTag =

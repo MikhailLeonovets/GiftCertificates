@@ -27,7 +27,7 @@ public interface GiftCertificateTagService {
 			GiftCertificateNotFoundException, TagNotFoundException;
 
 	GiftCertificateTag findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId)
-			throws GiftCertificateTagNotFoundException;
+			throws GiftCertificateTagNotFoundException, GiftCertificateNotFoundException, TagNotFoundException, DataInputException;
 
 	void delete(GiftCertificateTag giftCertificateTag) throws GiftCertificateTagNotFoundException, DataInputException;
 

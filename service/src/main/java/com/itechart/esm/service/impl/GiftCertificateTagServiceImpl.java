@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class GiftCertificateTagServiceImpl implements GiftCertificateTagService {
@@ -45,12 +46,12 @@ public class GiftCertificateTagServiceImpl implements GiftCertificateTagService 
 			throws GiftCertificateNotFoundException, TagNotFoundException, DataInputException {
 		List<GiftCertificateTag> giftCertificateTags =
 				giftCertificateTagRepository.findAll();
+		List<GiftCertificateTag> populatedGiftCertificateTags = new ArrayList<>();
 		for (GiftCertificateTag giftCertificateTag : giftCertificateTags) {
 			GiftCertificateTag fullGiftCertificateTag = populate(giftCertificateTag);
-			giftCertificateTags.remove(giftCertificateTag);
-			giftCertificateTags.add(fullGiftCertificateTag);
+			populatedGiftCertificateTags.add(fullGiftCertificateTag);
 		}
-		return giftCertificateTags;
+		return populatedGiftCertificateTags;
 	}
 
 	@Override
@@ -98,9 +99,17 @@ public class GiftCertificateTagServiceImpl implements GiftCertificateTagService 
 
 	@Override
 	public GiftCertificateTag findByTagIdAndGiftCertificateId(Long tagId, Long giftCertificateId)
-			throws GiftCertificateTagNotFoundException {
-		return giftCertificateTagRepository.findByTagIdAndGiftCertificateId(tagId, giftCertificateId)
-				.orElseThrow(GiftCertificateTagNotFoundException::new);
+			throws GiftCertificateTagNotFoundException,
+			GiftCertificateNotFoundException, TagNotFoundException, DataInputException {
+		if (tagId == null || giftCertificateId == null) {
+			throw new DataInputException();
+		}
+		Optional<GiftCertificateTag> optionalGiftCertificateTag =
+				giftCertificateTagRepository.findByTagIdAndGiftCertificateId(tagId, giftCertificateId);
+		if (optionalGiftCertificateTag.isEmpty()) {
+			throw new GiftCertificateTagNotFoundException();
+		}
+		return populate(optionalGiftCertificateTag.get());
 	}
 
 	@Override
