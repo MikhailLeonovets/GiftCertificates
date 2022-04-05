@@ -18,6 +18,7 @@ import java.util.Optional;
 @ExtendWith(MockitoExtension.class)
 class TagServiceImplTest {
 	private TagServiceImpl tagService;
+
 	@Mock
 	private TagRepository tagRepository;
 
@@ -42,6 +43,15 @@ class TagServiceImplTest {
 		Mockito.verify(tagRepository).save(tagArgumentCaptor.capture());
 		Tag capturedTag = tagArgumentCaptor.getValue();
 		Assertions.assertEquals(capturedTag, tag);
+		Assertions.assertDoesNotThrow(DataInputException::new);
+	}
+
+	@Test
+	void testSaveThrowsDataInputException() {
+		// Given
+		// When
+		// Then
+		Assertions.assertThrows(DataInputException.class, () -> tagService.save(null));
 	}
 
 	@Test
@@ -65,6 +75,8 @@ class TagServiceImplTest {
 
 		// Then
 		Assertions.assertEquals(expectedOptionalResult.get(), actualResult);
+		Assertions.assertDoesNotThrow(TagNotFoundException::new);
+		Assertions.assertDoesNotThrow(DataInputException::new);
 	}
 
 	@Test
@@ -75,6 +87,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(TagNotFoundException.class, () -> tagService.findById(testId));
+		Assertions.assertDoesNotThrow(DataInputException::new);
 	}
 
 	@Test
@@ -83,6 +96,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(DataInputException.class, () -> tagService.findById(null));
+		Assertions.assertDoesNotThrow(TagNotFoundException::new);
 	}
 
 	@Test
@@ -96,6 +110,8 @@ class TagServiceImplTest {
 
 		// Then
 		Assertions.assertEquals(expectedOptionalResult.get(), actualResult);
+		Assertions.assertDoesNotThrow(DataInputException::new);
+		Assertions.assertDoesNotThrow(TagNotFoundException::new);
 	}
 
 	@Test
@@ -106,6 +122,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(TagNotFoundException.class, () -> tagService.findByName(testName));
+		Assertions.assertDoesNotThrow(DataInputException::new);
 	}
 
 	@Test
@@ -114,6 +131,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(DataInputException.class, () -> tagService.findByName(null));
+		Assertions.assertDoesNotThrow(TagNotFoundException::new);
 	}
 
 	@Test
@@ -137,6 +155,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(DataInputException.class, () -> tagService.delete(null));
+		Assertions.assertDoesNotThrow(TagNotFoundException::new);
 	}
 
 	@Test
@@ -147,6 +166,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(TagNotFoundException.class, () -> tagService.deleteById(testId));
+		Assertions.assertDoesNotThrow(DataInputException::new);
 	}
 
 	@Test
@@ -169,6 +189,7 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(DataInputException.class, () -> tagService.deleteById(null));
+		Assertions.assertDoesNotThrow(TagNotFoundException::new);
 	}
 
 	@Test
@@ -179,5 +200,6 @@ class TagServiceImplTest {
 		// When
 		// Then
 		Assertions.assertThrows(TagNotFoundException.class, () -> tagService.deleteById(testId));
+		Assertions.assertDoesNotThrow(DataInputException::new);
 	}
 }

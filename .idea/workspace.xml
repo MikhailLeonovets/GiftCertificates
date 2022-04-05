@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="TagRepository updated&#10;TagSpringJdbcRepositoryTest created">
-      <change afterPath="$PROJECT_DIR$/service/src/test/java/com/itechart/esm/service/impl/TagServiceImplTest.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="pom.xml updated&#10;TagServiceImplTest updated and completed">
+      <change afterPath="$PROJECT_DIR$/service/src/test/java/com/itechart/esm/service/impl/GiftCertificateServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itechart/esm/service/impl/TagServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itechart/esm/service/impl/TagServiceImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +98,8 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TagServiceImplTest">
-    <configuration name="TagServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GiftCertificateServiceImplTest">
+    <configuration name="GiftCertificateServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -109,13 +108,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.TagServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagServiceImplTest.testDeleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GiftCertificateServiceImplTest.deleteById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -124,14 +123,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.TagServiceImplTest" />
-      <option name="METHOD_NAME" value="testDeleteById" />
+      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateServiceImplTest" />
+      <option name="METHOD_NAME" value="deleteById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagServiceImplTest.testDeleteByIdThrowsDataInputException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GiftCertificateServiceImplTest.testDeleteByIdThrowsDataInputExceptionException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -140,14 +139,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.TagServiceImplTest" />
-      <option name="METHOD_NAME" value="testDeleteByIdThrowsDataInputException" />
+      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateServiceImplTest" />
+      <option name="METHOD_NAME" value="testDeleteByIdThrowsDataInputExceptionException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagServiceImplTest.testDeleteByIdThrowsTagNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GiftCertificateServiceImplTest.testDeleteByIdThrowsGiftCertificateNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -156,14 +155,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.TagServiceImplTest" />
-      <option name="METHOD_NAME" value="testDeleteByIdThrowsTagNotFoundException" />
+      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateServiceImplTest" />
+      <option name="METHOD_NAME" value="testDeleteByIdThrowsGiftCertificateNotFoundException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TagServiceImplTest.testDeleteThrowsTagNotFoundException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GiftCertificateServiceImplTest.testDeleteThrowsDataInputException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
         <pattern>
@@ -172,8 +171,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.TagServiceImplTest" />
-      <option name="METHOD_NAME" value="testDeleteThrowsTagNotFoundException" />
+      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateServiceImplTest" />
+      <option name="METHOD_NAME" value="testDeleteThrowsDataInputException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -346,19 +345,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
-      <item itemvalue="JUnit.TagServiceImplTest.testDeleteThrowsTagNotFoundException" />
-      <item itemvalue="JUnit.TagServiceImplTest.testDeleteById" />
-      <item itemvalue="JUnit.TagServiceImplTest.testDeleteByIdThrowsDataInputException" />
-      <item itemvalue="JUnit.TagServiceImplTest.testDeleteByIdThrowsTagNotFoundException" />
-      <item itemvalue="JUnit.TagServiceImplTest" />
+      <item itemvalue="JUnit.GiftCertificateServiceImplTest.testDeleteThrowsDataInputException" />
+      <item itemvalue="JUnit.GiftCertificateServiceImplTest.deleteById" />
+      <item itemvalue="JUnit.GiftCertificateServiceImplTest.testDeleteByIdThrowsGiftCertificateNotFoundException" />
+      <item itemvalue="JUnit.GiftCertificateServiceImplTest.testDeleteByIdThrowsDataInputExceptionException" />
+      <item itemvalue="JUnit.GiftCertificateServiceImplTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TagServiceImplTest" />
-        <item itemvalue="JUnit.TagServiceImplTest.testDeleteByIdThrowsTagNotFoundException" />
-        <item itemvalue="JUnit.TagServiceImplTest.testDeleteByIdThrowsDataInputException" />
-        <item itemvalue="JUnit.TagServiceImplTest.testDeleteById" />
-        <item itemvalue="JUnit.TagServiceImplTest.testDeleteThrowsTagNotFoundException" />
+        <item itemvalue="JUnit.GiftCertificateServiceImplTest" />
+        <item itemvalue="JUnit.GiftCertificateServiceImplTest.testDeleteByIdThrowsDataInputExceptionException" />
+        <item itemvalue="JUnit.GiftCertificateServiceImplTest.testDeleteByIdThrowsGiftCertificateNotFoundException" />
+        <item itemvalue="JUnit.GiftCertificateServiceImplTest.deleteById" />
+        <item itemvalue="JUnit.GiftCertificateServiceImplTest.testDeleteThrowsDataInputException" />
       </list>
     </recent_temporary>
   </component>
@@ -398,14 +397,7 @@
       <workItem from="1648824165026" duration="503000" />
       <workItem from="1648824785975" duration="2627000" />
       <workItem from="1649057145554" duration="21089000" />
-      <workItem from="1649143519461" duration="8107000" />
-    </task>
-    <task id="LOCAL-00001" summary="Modules structure created&#10;pom.xml updated with spring framework, mockito, junit and postrgresql's driver dependencies">
-      <created>1647351136968</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647351136968</updated>
+      <workItem from="1649143519461" duration="15300000" />
     </task>
     <task id="LOCAL-00002" summary="GiftCertificate entity created&#10;Tag entity created&#10;GiftCertificateBuilder created">
       <created>1647351902655</created>
@@ -743,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649079816508</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="pom.xml updated&#10;TagServiceImplTest updated and completed">
+      <created>1649156435583</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1649156435583</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +760,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="app config updated" />
     <MESSAGE value="SpringConfig updated" />
     <MESSAGE value="TagSpringJdbcRepository updated" />
     <MESSAGE value="Code refactored" />
@@ -786,6 +784,7 @@
     <MESSAGE value="Dockerfile changes" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created" />
     <MESSAGE value="TagRepository updated&#10;TagSpringJdbcRepositoryTest created" />
-    <option name="LAST_COMMIT_MESSAGE" value="TagRepository updated&#10;TagSpringJdbcRepositoryTest created" />
+    <MESSAGE value="pom.xml updated&#10;TagServiceImplTest updated and completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated&#10;TagServiceImplTest updated and completed" />
   </component>
 </project>
