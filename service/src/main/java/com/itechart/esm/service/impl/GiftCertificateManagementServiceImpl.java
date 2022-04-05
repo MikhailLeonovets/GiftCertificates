@@ -39,6 +39,9 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	@Override
 	public void createGiftCertificate(GiftCertificateAndItsTags giftCertificateAndItsTags)
 			throws DataInputException {
+		if (giftCertificateAndItsTags == null) {
+			throw new DataInputException();
+		}
 		giftCertificateService.save(giftCertificateAndItsTags.getGiftCertificate());
 		for (Tag includedTag : giftCertificateAndItsTags.getTags()) {
 			tagService.save(includedTag);
