@@ -22,7 +22,7 @@ public interface GiftCertificateManagementService {
 	List<GiftCertificateAndItsTags> findAllSortByName()
 			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException;
 
-	GiftCertificateAndItsTags findById(Long id) throws GiftCertificateNotFoundException, DataInputException,
+	GiftCertificateAndItsTags findByGiftCertificateId(Long id) throws GiftCertificateNotFoundException, DataInputException,
 			TagNotFoundException;
 
 	List<GiftCertificateAndItsTags> findByTag(Tag tag) throws DataInputException, TagNotFoundException,

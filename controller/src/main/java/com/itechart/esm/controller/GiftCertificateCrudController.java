@@ -64,7 +64,7 @@ public class GiftCertificateCrudController {
 	@GetMapping(URL_MAIN_GIFT_CERT_PAGE + URL_GET_BY_ID_GIFT_CERT)
 	public ResponseEntity<?> getGiftCertificate(@PathVariable Long id) throws GiftCertificateNotFoundException,
 			TagNotFoundException, DataInputException {
-		return ResponseEntity.ok(giftCertificateManagementService.findById(id));
+		return ResponseEntity.ok(giftCertificateManagementService.findByGiftCertificateId(id));
 	}
 
 	@DeleteMapping(URL_MAIN_GIFT_CERT_PAGE + URL_DELETE_GIFT_CERT)

@@ -69,9 +69,10 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	public List<GiftCertificateAndItsTags> findAllSortByDateOfCreation()
 			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException {
 		List<GiftCertificate> giftCertificates = giftCertificateService.findAll();
-		giftCertificates.sort(Comparator.comparing(GiftCertificate::getDateOfCreation));
+		List<GiftCertificate> sortedGiftCertificates = giftCertificates.stream()
+				.sorted(Comparator.comparing(GiftCertificate::getDateOfCreation)).toList();
 		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
-		for (GiftCertificate giftCertificate : giftCertificates) {
+		for (GiftCertificate giftCertificate : sortedGiftCertificates) {
 			giftCertificateAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
 		}
 		return giftCertificateAndItsTags;
@@ -81,23 +82,30 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	public List<GiftCertificateAndItsTags> findAllSortByName()
 			throws TagNotFoundException, GiftCertificateNotFoundException, DataInputException {
 		List<GiftCertificate> giftCertificates = giftCertificateService.findAll();
-		giftCertificates.sort(Comparator.comparing(GiftCertificate::getName));
+		List<GiftCertificate> sortedGiftCertificates = giftCertificates.stream()
+				.sorted(Comparator.comparing(GiftCertificate::getName)).toList();
 		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
-		for (GiftCertificate giftCertificate : giftCertificates) {
+		for (GiftCertificate giftCertificate : sortedGiftCertificates) {
 			giftCertificateAndItsTags.add(createGiftCertificateAndItsTags(giftCertificate));
 		}
 		return giftCertificateAndItsTags;
 	}
 
 	@Override
-	public GiftCertificateAndItsTags findById(Long id) throws GiftCertificateNotFoundException,
+	public GiftCertificateAndItsTags findByGiftCertificateId(Long id) throws GiftCertificateNotFoundException,
 			DataInputException, TagNotFoundException {
+		if (id == null) {
+			throw new DataInputException();
+		}
 		return createGiftCertificateAndItsTags(giftCertificateService.findById(id));
 	}
 
 	@Override
 	public List<GiftCertificateAndItsTags> findByTag(Tag tag)
 			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		if (tag == null) {
+			throw new DataInputException();
+		}
 		List<GiftCertificateTag> giftCertificatesTags = giftCertificateTagService.findByTag(tag);
 		List<GiftCertificate> giftCertificates = giftCertificatesTags.stream()
 				.map(GiftCertificateTag::getGiftCertificate).toList();
@@ -109,9 +117,12 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	}
 
 	@Override
-	public List<GiftCertificateAndItsTags> findByTag(String tagName)
+	public List<GiftCertificateAndItsTags> findByTag(String name)
 			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
-		Tag tag = tagService.findByName(tagName);
+		if (name == null) {
+			throw new DataInputException();
+		}
+		Tag tag = tagService.findByName(name);
 		List<GiftCertificateTag> giftCertificatesTags = giftCertificateTagService.findByTag(tag);
 		List<GiftCertificate> giftCertificates = giftCertificatesTags.stream()
 				.map(GiftCertificateTag::getGiftCertificate).toList();
@@ -123,9 +134,12 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	}
 
 	@Override
-	public List<GiftCertificateAndItsTags> findByTag(Long tagId)
+	public List<GiftCertificateAndItsTags> findByTag(Long id)
 			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
-		Tag tag = tagService.findById(tagId);
+		if (id == null) {
+			throw new DataInputException();
+		}
+		Tag tag = tagService.findById(id);
 		List<GiftCertificateTag> giftCertificatesTags = giftCertificateTagService.findByTag(tag);
 		List<GiftCertificate> giftCertificates = giftCertificatesTags.stream()
 				.map(GiftCertificateTag::getGiftCertificate).toList();
@@ -139,6 +153,9 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	@Override
 	public List<GiftCertificateAndItsTags> findByPartOfName(String name)
 			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		if (name == null) {
+			throw new DataInputException();
+		}
 		List<GiftCertificate> giftCertificates = giftCertificateService.findByPartOfName(name);
 		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
 		for (GiftCertificate giftCertificate : giftCertificates) {
@@ -150,6 +167,9 @@ public class GiftCertificateManagementServiceImpl implements GiftCertificateMana
 	@Override
 	public List<GiftCertificateAndItsTags> findByPartOfDescription(String description)
 			throws DataInputException, TagNotFoundException, GiftCertificateNotFoundException {
+		if (description == null) {
+			throw new DataInputException();
+		}
 		List<GiftCertificate> giftCertificates = giftCertificateService.findByPartOfDescription(description);
 		List<GiftCertificateAndItsTags> giftCertificateAndItsTags = new ArrayList<>();
 		for (GiftCertificate giftCertificate : giftCertificates) {
