@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage ('Build and Run') {
             steps {
-                sh 'docker compose up -d --no-color --wait'
+                sh 'docker compose up'
             }
         }
         stage('Docker Build') {
