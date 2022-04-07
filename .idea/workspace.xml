@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -386,14 +381,7 @@
       <workItem from="1649168668622" duration="2446000" />
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
-      <workItem from="1649315869091" duration="7093000" />
-    </task>
-    <task id="LOCAL-00006" summary="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed">
-      <created>1647422004769</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1647422004769</updated>
+      <workItem from="1649315869091" duration="7426000" />
     </task>
     <task id="LOCAL-00007" summary="database.properties url changed&#10;GiftCertificate updated&#10;GiftCertificateSpringJdbcRepository updated&#10;utilities module created&#10;PostgresIntervalConverter created&#10;GiftCertificateMapper created">
       <created>1647439679612</created>
@@ -731,7 +719,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649244283493</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Jenkinsfile created">
+      <created>1649338899408</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1649338899408</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,7 +744,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="module utility renamed from utilities" />
     <MESSAGE value="JdbcRepositories updated" />
     <MESSAGE value="GiftCertificateTagSpringJdbcRepository updated" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository updated: date of modification" />
@@ -774,7 +768,8 @@
     <MESSAGE value="GiftCertificateManagementServiceImpl.java updated&#10;GiftCertificateTagService updated&#10;GiftCertificateTagServiceImplTest created" />
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java created" />
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
+    <MESSAGE value="Jenkinsfile created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile created" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

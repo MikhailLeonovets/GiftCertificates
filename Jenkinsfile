@@ -17,14 +17,6 @@ pipeline {
                 '''
             }
         }
-        '''
-        stage ('Cloning git') {
-            steps {
-                git([url: 'https://github.com/MikhailLeonovets/GiftCertificates.git', branch: 'master',
-                credentialsId: 'git-hub'])
-            }
-        }
-        '''
         stage ('Build and Run') {
             steps {
                 sh 'docker compose up -d --no-color --wait'
