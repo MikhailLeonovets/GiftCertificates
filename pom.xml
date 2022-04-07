@@ -18,6 +18,7 @@
         <junit.jupiter.version>5.8.2</junit.jupiter.version>
         <javax.servlet.version>4.0.1</javax.servlet.version>
         <mockito.junit.version>4.3.1</mockito.junit.version>
+        <checkstyle.version>10.1</checkstyle.version>
     </properties>
 
     <dependencies>
@@ -95,6 +96,11 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>${checkstyle.version}</version>
         </dependency>
     </dependencies>
 

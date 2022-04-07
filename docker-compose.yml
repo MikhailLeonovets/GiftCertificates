@@ -13,8 +13,6 @@ services:
       - "8080:8080"
     depends_on:
       - app-db
-    volumes:
-      - ./jenkins_home/userContent/repository:/var/image_home
   jenkins:
     container_name: jenkins
     build: /docker/jenkins/.

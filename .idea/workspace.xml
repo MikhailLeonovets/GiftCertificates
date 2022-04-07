@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java created">
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/itechart/esm/controller/GiftCertificateCrudController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/test/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/test/java/com/itechart/esm/service/impl/GiftCertificateManagementServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.com.itechart.esm.service.impl in service">
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="GiftCertificateManagementServiceImplTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <option name="TEST_OBJECT" value="pattern" />
@@ -125,38 +124,6 @@
       <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateManagementServiceImplTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GiftCertificateManagementServiceImplTest.findByPartOfDescriptionThrowsDataInputException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itechart.esm.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateManagementServiceImplTest" />
-      <option name="METHOD_NAME" value="findByPartOfDescriptionThrowsDataInputException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GiftCertificateManagementServiceImplTest.findByPartOfNameThrowsDataInputException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itechart.esm.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateManagementServiceImplTest" />
-      <option name="METHOD_NAME" value="findByPartOfNameThrowsDataInputException" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -340,21 +307,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
-      <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest.findByPartOfNameThrowsDataInputException" />
-      <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest.findByPartOfDescriptionThrowsDataInputException" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
       <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest" />
       <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest and 3 more" />
       <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
         <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
         <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest and 3 more" />
         <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest" />
-        <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest.findByPartOfDescriptionThrowsDataInputException" />
-        <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest.findByPartOfNameThrowsDataInputException" />
       </list>
     </recent_temporary>
   </component>
@@ -397,14 +385,8 @@
       <workItem from="1649143519461" duration="17884000" />
       <workItem from="1649168668622" duration="2446000" />
       <workItem from="1649171159000" duration="2433000" />
-      <workItem from="1649229176609" duration="13414000" />
-    </task>
-    <task id="LOCAL-00005" summary="workspace.xml updated">
-      <created>1647415300221</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1647415300221</updated>
+      <workItem from="1649229176609" duration="16161000" />
+      <workItem from="1649315869091" duration="7093000" />
     </task>
     <task id="LOCAL-00006" summary="GiftCertificateSpringJdbcRepository renamed&#10;TagSpringJdbcRepository renamed">
       <created>1647422004769</created>
@@ -742,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649173718637</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated">
+      <created>1649244283492</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1649244283493</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -760,7 +749,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificateSpringJdbcRepository refactored" />
     <MESSAGE value="module utility renamed from utilities" />
     <MESSAGE value="JdbcRepositories updated" />
     <MESSAGE value="GiftCertificateTagSpringJdbcRepository updated" />
@@ -785,7 +773,8 @@
     <MESSAGE value="GiftCertificateServiceImplTest created&#10;TagServiceImplTest updated" />
     <MESSAGE value="GiftCertificateManagementServiceImpl.java updated&#10;GiftCertificateTagService updated&#10;GiftCertificateTagServiceImplTest created" />
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java created" />
-    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java created" />
+    <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -795,6 +784,13 @@
       <FILTER>com.itechart.esm.service.impl.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateTagServiceImplTest.ic" NAME="GiftCertificateTagServiceImplTest Coverage Results" MODIFIED="1649172973468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.itechart.esm.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateManagementServiceImplTest_and_3_more.ic" NAME="GiftCertificateManagementServiceImplTest and 3 more Coverage Results" MODIFIED="1649244213351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GiftCertificates$com_itechart_esm_service_impl_in_service.ic" NAME="com.itechart.esm.service.impl in service Coverage Results" MODIFIED="1649244233072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.itechart.esm.service.impl.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateManagementServiceImplTest.ic" NAME="GiftCertificateManagementServiceImplTest Coverage Results" MODIFIED="1649244183833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.itechart.esm.service.impl.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateServiceImplTest.ic" NAME="GiftCertificateServiceImplTest Coverage Results" MODIFIED="1649173016751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
