@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="jenkinsfile updated">
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="pom.xml updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -393,21 +395,7 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="9431000" />
-    </task>
-    <task id="LOCAL-00022" summary="GiftCertificateController update with base functions of CRUD">
-      <created>1647872117768</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1647872117768</updated>
-    </task>
-    <task id="LOCAL-00023" summary="app config updated">
-      <created>1647877476891</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1647877476891</updated>
+      <workItem from="1649402061116" duration="10969000" />
     </task>
     <task id="LOCAL-00024" summary="SpringConfig updated">
       <created>1647943098005</created>
@@ -738,7 +726,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649413483095</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="pom.xml updated">
+      <created>1649415481395</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1649415481395</updated>
+    </task>
+    <task id="LOCAL-00072" summary="pom.xml updated">
+      <created>1649415734749</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1649415734750</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +758,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificateSpringJdbcRepository updated: date of modification" />
     <MESSAGE value="GiftCertificateCrudController renamed from GiftCertificateController" />
     <MESSAGE value="GiftCertificateFilterController created&#10;Services updated" />
     <MESSAGE value="Searching by name/description feature created" />
@@ -781,7 +782,8 @@
     <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="docker-compose.yml updated" />
     <MESSAGE value="jenkinsfile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="jenkinsfile updated" />
+    <MESSAGE value="pom.xml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
