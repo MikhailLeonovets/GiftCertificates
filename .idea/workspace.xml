@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="docker-compose.yml updated">
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -394,14 +393,7 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="4543000" />
-    </task>
-    <task id="LOCAL-00011" summary="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created">
-      <created>1647511221639</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1647511221639</updated>
+      <workItem from="1649402061116" duration="5165000" />
     </task>
     <task id="LOCAL-00012" summary="TagNotFoundException created&#10;GiftCertificateNotFoundException created&#10;&#10;TagService created and implemented id TagServiceImpl&#10;GiftCertificateService created and implemented in GiftCertificateServiceImpl">
       <created>1647530519549</created>
@@ -739,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649406763856</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="docker-compose.yml updated">
+      <created>1649407988509</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1649407988509</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +756,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="JdbcRepositories updated" />
     <MESSAGE value="GiftCertificateTagSpringJdbcRepository updated" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository updated: date of modification" />
     <MESSAGE value="GiftCertificateCrudController renamed from GiftCertificateController" />
@@ -782,7 +780,8 @@
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
     <MESSAGE value="Jenkinsfile created" />
     <MESSAGE value="Jenkinsfile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
+    <MESSAGE value="docker-compose.yml updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker-compose.yml updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
