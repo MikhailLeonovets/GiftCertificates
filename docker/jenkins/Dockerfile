@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:latest-jdk17-preview
 USER root
 RUN apt-get update -qq && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common
 RUN curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -

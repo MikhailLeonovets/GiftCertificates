@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="pom.xml updated">
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/jenkins/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/jenkins/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,9 @@
     </ExecCommand>
     <ExecCommand>
       <option name="command" value="chmod +x /usr/local/bin/docker-compose" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="java -version" />
     </ExecCommand>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -109,21 +111,7 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.jenkins: Compose Deployment">
-    <configuration name="com.itechart.esm.service.impl in service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itechart.esm.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
     <configuration name="Tomcat 9.0.60" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.60" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -336,21 +324,29 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="jenkins/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="docker/jenkins/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-      <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
       <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
+      <item itemvalue="Docker.jenkins/Dockerfile" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.jenkins/Dockerfile" />
         <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-        <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
       </list>
     </recent_temporary>
   </component>
@@ -395,14 +391,7 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="10969000" />
-    </task>
-    <task id="LOCAL-00024" summary="SpringConfig updated">
-      <created>1647943098005</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1647943098005</updated>
+      <workItem from="1649402061116" duration="13315000" />
     </task>
     <task id="LOCAL-00025" summary="SpringConfig updated">
       <created>1647944002518</created>
@@ -740,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649415734750</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Jenkinsfile updated">
+      <created>1649419972466</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1649419972466</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,11 +775,11 @@
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java created" />
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
     <MESSAGE value="Jenkinsfile created" />
-    <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="docker-compose.yml updated" />
     <MESSAGE value="jenkinsfile updated" />
     <MESSAGE value="pom.xml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated" />
+    <MESSAGE value="Jenkinsfile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

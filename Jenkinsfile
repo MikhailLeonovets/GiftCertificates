@@ -36,7 +36,7 @@ pipeline {
         stage('Pushing Docker Image to Dockerhub') {
             steps {
                 script {
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker_credential') {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker') {
                         docker.image("leonovets/gift_certificate:${TAG}").push()
                         docker.image("leonovets/gift_certificate:${TAG}").push("latest")
                     }
