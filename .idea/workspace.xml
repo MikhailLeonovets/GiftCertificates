@@ -388,14 +388,7 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="16876000" />
-    </task>
-    <task id="LOCAL-00027" summary="Code refactored">
-      <created>1647955777648</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1647955777648</updated>
+      <workItem from="1649402061116" duration="17225000" />
     </task>
     <task id="LOCAL-00028" summary="GiftCertificateSpringJdbcRepository refactored">
       <created>1647956417551</created>
@@ -733,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649430004540</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Jenkinsfile updated">
+      <created>1649430427548</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1649430427548</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
