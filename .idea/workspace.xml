@@ -9,11 +9,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile created" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockerExecCommands">
+    <ExecCommand>
+      <option name="command" value="sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="curl -L &quot;https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose" />
+    </ExecCommand>
+    <ExecCommand>
+      <option name="command" value="chmod +x /usr/local/bin/docker-compose" />
+    </ExecCommand>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,35 +107,7 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
-    <configuration name="GiftCertificateManagementServiceImplTest and 3 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
-      <option name="TEST_OBJECT" value="pattern" />
-      <patterns>
-        <pattern testClass="com.itechart.esm.service.impl.GiftCertificateManagementServiceImplTest" />
-        <pattern testClass="com.itechart.esm.service.impl.GiftCertificateServiceImplTest" />
-        <pattern testClass="com.itechart.esm.service.impl.GiftCertificateTagServiceImplTest" />
-        <pattern testClass="com.itechart.esm.service.impl.TagServiceImplTest" />
-      </patterns>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GiftCertificateManagementServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itechart.esm.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.itechart.esm.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.itechart.esm.service.impl.GiftCertificateManagementServiceImplTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Docker.docker-compose.yml.app-db: Compose Deployment">
     <configuration name="com.itechart.esm.service.impl in service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
@@ -310,6 +295,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.app-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="app-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.app: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -323,21 +321,34 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.jenkins: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="jenkins" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-      <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest" />
-      <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest and 3 more" />
       <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
+      <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
         <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
-        <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest and 3 more" />
-        <item itemvalue="JUnit.GiftCertificateManagementServiceImplTest" />
       </list>
     </recent_temporary>
   </component>
@@ -381,28 +392,8 @@
       <workItem from="1649168668622" duration="2446000" />
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
-      <workItem from="1649315869091" duration="7426000" />
-    </task>
-    <task id="LOCAL-00007" summary="database.properties url changed&#10;GiftCertificate updated&#10;GiftCertificateSpringJdbcRepository updated&#10;utilities module created&#10;PostgresIntervalConverter created&#10;GiftCertificateMapper created">
-      <created>1647439679612</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1647439679612</updated>
-    </task>
-    <task id="LOCAL-00008" summary="TagMapper created&#10;TagSpringJdbcRepository updated">
-      <created>1647442374591</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1647442374591</updated>
-    </task>
-    <task id="LOCAL-00009" summary="GiftCertificateTag created&#10;GiftCertificate updated">
-      <created>1647502264164</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1647502264164</updated>
+      <workItem from="1649315869091" duration="8012000" />
+      <workItem from="1649402061116" duration="3564000" />
     </task>
     <task id="LOCAL-00010" summary="GiftCertificateTagRepository created&#10;Repositories updated">
       <created>1647505424014</created>
@@ -726,7 +717,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649338899408</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="Jenkinsfile updated">
+      <created>1649339158036</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1649339158036</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Jenkinsfile updated">
+      <created>1649339263895</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1649339263895</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Jenkinsfile updated">
+      <created>1649339317074</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1649339317074</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -758,7 +770,6 @@
     <MESSAGE value="sql scripts added" />
     <MESSAGE value="sql script of creating database added" />
     <MESSAGE value="Jenkinsfile created&#10;docker-compose.yml updated" />
-    <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="some commit" />
     <MESSAGE value="Dockerfile changes" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created" />
@@ -769,7 +780,8 @@
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java created" />
     <MESSAGE value="GiftCertificateManagementServiceImpl updated&#10;GiftCertificateManagementServiceImplTest.java updated" />
     <MESSAGE value="Jenkinsfile created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile created" />
+    <MESSAGE value="Jenkinsfile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
