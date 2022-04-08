@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +108,7 @@
       <command value="/" />
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.app-db: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml.jenkins: Compose Deployment">
     <configuration name="com.itechart.esm.service.impl in service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="service" />
       <extension name="coverage">
@@ -344,9 +345,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
         <item itemvalue="JUnit.com.itechart.esm.service.impl in service" />
       </list>
@@ -393,14 +394,7 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="3564000" />
-    </task>
-    <task id="LOCAL-00010" summary="GiftCertificateTagRepository created&#10;Repositories updated">
-      <created>1647505424014</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1647505424014</updated>
+      <workItem from="1649402061116" duration="4543000" />
     </task>
     <task id="LOCAL-00011" summary="Tag and GiftCertificate updated with constructor with id parameter&#10;GiftCertificateTagMapper created&#10;GiftCertificateTagSpringJdbcRepository created">
       <created>1647511221639</created>
@@ -738,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649339317074</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Jenkinsfile updated">
+      <created>1649406763856</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1649406763856</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
