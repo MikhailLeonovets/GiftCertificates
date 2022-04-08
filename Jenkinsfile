@@ -8,9 +8,10 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
+
         stage ('Build and Run') {
             steps {
-                sh 'docker-compose up'
+                sh 'docker-compose up -d'
             }
         }
         stage('Docker Build') {
