@@ -8,22 +8,19 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
-        stage('Cloning git') {
-            steps {
-                // Clones the repository from the current branch name
-                echo 'Make the output directory'
-                sh 'mkdir -p build'
-
-                echo 'Cloning files from (branch: "' + 'master' + '" )'
-                dir('build') {
-                    git branch: 'master', credentialsId: 'git-hub',
-                            url: 'https://github.com/MikhailLeonovets/GiftCertificates.git'
-                }
-            }
-        }
         stage('Build') {
             steps {
                 sh 'mvn package'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'mvn test'
+            }
+            post {
+                always {
+                    junit 'target/surefire-reports/*.xml'
+                }
             }
         }
         stage('Docker Build') {
