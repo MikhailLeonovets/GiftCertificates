@@ -11,7 +11,7 @@ pipeline {
 
         stage ('Build and Run') {
             steps {
-                sh 'docker build -t'
+                sh 'docker build - < Dockerfile'
             }
         }
         stage('Docker Build') {
