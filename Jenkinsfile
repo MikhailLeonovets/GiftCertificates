@@ -8,7 +8,17 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
+        stage ('Cloning git') {
+            // Clones the repository from the current branch name
+            echo 'Make the output directory'
+            sh 'mkdir -p build'
 
+            echo 'Cloning files from (branch: "' + master + '" )'
+            dir('build') {
+                git branch: master, credentialsId: 	git-hub,
+                        url: https://github.com/MikhailLeonovets/GiftCertificates.git
+            }
+        }
         stage ('Build and Run') {
             steps {
                 sh 'docker build - < Dockerfile'

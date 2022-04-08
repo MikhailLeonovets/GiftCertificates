@@ -9,7 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="docker-compose.yml updated">
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="jenkinsfile updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -393,35 +394,7 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="5648000" />
-    </task>
-    <task id="LOCAL-00013" summary="DataInputException created&#10;GiftCertificateService updated&#10;GiftCertificateTagNotFoundException created&#10;GiftCertificateTagService created&#10;GiftCertificateTagServiceImpl created">
-      <created>1647590856172</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1647590856172</updated>
-    </task>
-    <task id="LOCAL-00014" summary="GiftCertificateAndItsTags created&#10;GiftCertificateManagementService created">
-      <created>1647595446266</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1647595446266</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Services updated&#10;GiftCertificateManagementService created and implemented">
-      <created>1647615097370</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1647615097370</updated>
-    </task>
-    <task id="LOCAL-00016" summary="GiftCertificateManagementService updated">
-      <created>1647618060586</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1647618060586</updated>
+      <workItem from="1649402061116" duration="7399000" />
     </task>
     <task id="LOCAL-00017" summary="update - todo">
       <created>1647618259072</created>
@@ -738,7 +711,35 @@
       <option name="project" value="LOCAL" />
       <updated>1649409563811</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="jenkinsfile updated">
+      <created>1649410087290</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1649410087290</updated>
+    </task>
+    <task id="LOCAL-00063" summary="jenkinsfile updated">
+      <created>1649410820117</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1649410820117</updated>
+    </task>
+    <task id="LOCAL-00064" summary="jenkinsfile updated">
+      <created>1649412563575</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1649412563575</updated>
+    </task>
+    <task id="LOCAL-00065" summary="jenkinsfile updated">
+      <created>1649412728408</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1649412728408</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -756,7 +757,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificateTagSpringJdbcRepository updated" />
     <MESSAGE value="GiftCertificateSpringJdbcRepository updated: date of modification" />
     <MESSAGE value="GiftCertificateCrudController renamed from GiftCertificateController" />
     <MESSAGE value="GiftCertificateFilterController created&#10;Services updated" />
@@ -781,7 +781,8 @@
     <MESSAGE value="Jenkinsfile created" />
     <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="docker-compose.yml updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker-compose.yml updated" />
+    <MESSAGE value="jenkinsfile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="jenkinsfile updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
