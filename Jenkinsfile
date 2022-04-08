@@ -8,7 +8,7 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
-'''        stage('Cloning git') {
+        stage('Cloning git') {
             steps {
                 // Clones the repository from the current branch name
                 echo 'Make the output directory'
@@ -20,13 +20,8 @@ pipeline {
                             url: 'https://github.com/MikhailLeonovets/GiftCertificates.git'
                 }
             }
-        }'''
-       ''' stage('Build and Run') {
-            steps {
-                sh 'docker build - < Dockerfile'
-            }
-        }'''
-        stage ('Build') {
+        }
+        stage('Build') {
             steps {
                 sh 'mvn clean package'
             }
