@@ -13,10 +13,10 @@ pipeline {
             echo 'Make the output directory'
             sh 'mkdir -p build'
 
-            echo 'Cloning files from (branch: "' + master + '" )'
+            echo 'Cloning files from (branch: "' + 'master' + '" )'
             dir('build') {
-                git branch: master, credentialsId: 	git-hub,
-                        url: https://github.com/MikhailLeonovets/GiftCertificates.git
+                git branch: 'master', credentialsId: 'git-hub',
+                        url: 'https://github.com/MikhailLeonovets/GiftCertificates.git'
             }
         }
         stage ('Build and Run') {
