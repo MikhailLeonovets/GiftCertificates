@@ -18,6 +18,7 @@ pipeline {
                     mail to: "enchantment.com@gmail.com",
                     subject: "Test Email",
                     body: "Test"
+                    attachLog: true
                 }
             }
         }
