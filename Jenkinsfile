@@ -8,6 +8,12 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
+        stage('PMD') {
+            steps {
+                sh 'vendor/bin/phpmd . xml build/phpmd.xml --reportfile build/logs/pmd.xml --exclude vendor/ || exit 0'
+                pmd canRunOnFailed: true, pattern: 'build/logs/pmd.xml'
+            }
+        }
         stage('Test') {
             steps {
                 sh 'mvn test'
