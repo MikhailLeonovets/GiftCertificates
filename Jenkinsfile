@@ -11,11 +11,11 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
-                junit '**/test-results/*.xml'
+                junit '**/surefire-reports/*.xml'
             }
             post {
                 always {
-                    junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
+                    junit allowEmptyResults: true, testResults: '**/surefire-reports/*.xml'
                 }
             }
         }

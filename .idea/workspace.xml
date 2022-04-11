@@ -9,14 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="pom.xml updated&#10;Jenkinsfile updated">
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utility/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -399,14 +393,7 @@
       <workItem from="1649402061116" duration="19039000" />
       <workItem from="1649660543125" duration="5476000" />
       <workItem from="1649672484482" duration="91000" />
-      <workItem from="1649672779867" duration="4559000" />
-    </task>
-    <task id="LOCAL-00033" summary="GiftCertificateCrudController renamed from GiftCertificateController">
-      <created>1648043544580</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1648043544580</updated>
+      <workItem from="1649672779867" duration="5030000" />
     </task>
     <task id="LOCAL-00034" summary="GiftCertificateFilterController created&#10;Services updated">
       <created>1648045210366</created>
@@ -744,7 +731,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649670986522</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="pom.xml updated&#10;Jenkinsfile updated">
+      <created>1649680315578</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1649680315578</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,7 +756,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GiftCertificateCrudController renamed from GiftCertificateController" />
     <MESSAGE value="GiftCertificateFilterController created&#10;Services updated" />
     <MESSAGE value="Searching by name/description feature created" />
     <MESSAGE value="Feature sort gift certificates created" />
@@ -787,7 +780,8 @@
     <MESSAGE value="jenkinsfile updated" />
     <MESSAGE value="pom.xml updated" />
     <MESSAGE value="Jenkinsfile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
+    <MESSAGE value="pom.xml updated&#10;Jenkinsfile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated&#10;Jenkinsfile updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
