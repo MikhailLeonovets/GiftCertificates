@@ -335,10 +335,10 @@
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
       <item itemvalue="Docker.docker-compose.yml.app-db: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.jenkins: Compose Deployment" />
       <item itemvalue="Docker.jenkins/Dockerfile" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.60" />
     </list>
     <recent_temporary>
       <list>
@@ -391,14 +391,8 @@
       <workItem from="1649171159000" duration="2433000" />
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
-      <workItem from="1649402061116" duration="18971000" />
-    </task>
-    <task id="LOCAL-00031" summary="GiftCertificateTagSpringJdbcRepository updated">
-      <created>1648042736517</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1648042736517</updated>
+      <workItem from="1649402061116" duration="19039000" />
+      <workItem from="1649660543125" duration="4558000" />
     </task>
     <task id="LOCAL-00032" summary="GiftCertificateSpringJdbcRepository updated: date of modification">
       <created>1648043402414</created>
@@ -736,7 +730,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649431547104</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Jenkinsfile updated">
+      <created>1649432623839</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1649432623839</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
