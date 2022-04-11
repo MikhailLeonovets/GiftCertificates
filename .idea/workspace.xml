@@ -12,6 +12,11 @@
     <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repository/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utility/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utility/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +83,7 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/repository/src/test/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/repository/src/test/java/com/itechart/esm/repository/jdbc_template" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Docker" />
@@ -392,14 +397,9 @@
       <workItem from="1649229176609" duration="16161000" />
       <workItem from="1649315869091" duration="8012000" />
       <workItem from="1649402061116" duration="19039000" />
-      <workItem from="1649660543125" duration="4558000" />
-    </task>
-    <task id="LOCAL-00032" summary="GiftCertificateSpringJdbcRepository updated: date of modification">
-      <created>1648043402414</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1648043402414</updated>
+      <workItem from="1649660543125" duration="5476000" />
+      <workItem from="1649672484482" duration="91000" />
+      <workItem from="1649672779867" duration="4559000" />
     </task>
     <task id="LOCAL-00033" summary="GiftCertificateCrudController renamed from GiftCertificateController">
       <created>1648043544580</created>
@@ -737,7 +737,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649432623839</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Jenkinsfile updated">
+      <created>1649670986522</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1649670986522</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

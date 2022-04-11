@@ -8,12 +8,6 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
-
-        stage('Build') {
-            steps {
-                sh 'mvn package'
-            }
-        }
         stage('Test') {
             steps {
                 sh 'mvn test'
@@ -23,6 +17,11 @@ pipeline {
                 always {
                     junit allowEmptyResults: true, testResults: '**/test-results/*.xml'
                 }
+            }
+        }
+        stage('Build') {
+            steps {
+                sh 'mvn package'
             }
         }
         stage('Docker Build') {
