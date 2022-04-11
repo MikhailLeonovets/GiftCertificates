@@ -17,7 +17,7 @@ pipeline {
                 always {
                     mail to: "enchantment.com@gmail.com",
                     subject: "Test Email",
-                    body: "Test"
+                    body: "Test",
                     attachLog: true
                 }
             }
