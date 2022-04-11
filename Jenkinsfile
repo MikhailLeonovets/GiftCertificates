@@ -8,10 +8,16 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
-        stage('PMD') {
+        stage('Checkstyle') {
             steps {
-                sh 'vendor/bin/phpmd . xml build/phpmd.xml --reportfile build/logs/pmd.xml --exclude vendor/ || exit 0'
-                pmd canRunOnFailed: true, pattern: 'build/logs/pmd.xml'
+                sh 'mvn checkstyle:checkstyle'
+            }
+            post {
+                always {
+                    mail to: "enchantment.com@gmail.com",
+                            subject: "Test Email",
+                            body: "Test"
+                }
             }
         }
         stage('Test') {
