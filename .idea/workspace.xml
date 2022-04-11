@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="pom.xml updated&#10;Jenkinsfile updated">
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-    </list>
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -393,14 +391,7 @@
       <workItem from="1649402061116" duration="19039000" />
       <workItem from="1649660543125" duration="5476000" />
       <workItem from="1649672484482" duration="91000" />
-      <workItem from="1649672779867" duration="5030000" />
-    </task>
-    <task id="LOCAL-00034" summary="GiftCertificateFilterController created&#10;Services updated">
-      <created>1648045210366</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1648045210366</updated>
+      <workItem from="1649672779867" duration="5660000" />
     </task>
     <task id="LOCAL-00035" summary="Searching by name/description feature created">
       <created>1648128327131</created>
@@ -738,7 +729,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649680315578</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="Jenkinsfile updated">
+      <created>1649680631256</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1649680631256</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,9 +777,9 @@
     <MESSAGE value="docker-compose.yml updated" />
     <MESSAGE value="jenkinsfile updated" />
     <MESSAGE value="pom.xml updated" />
-    <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="pom.xml updated&#10;Jenkinsfile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated&#10;Jenkinsfile updated" />
+    <MESSAGE value="Jenkinsfile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 @Configuration
 public class TestSpringJdbcConfiguration {
-	private final String dbUrl = "jdbc:postgresql://0.0.0.0:5433/esm-database-test";
+	private final String dbUrl = "jdbc:postgresql://app-db/esm-database-test";
 	private final String userName = "postgres";
 	private final String password = "root";
 	private final String driverClassName = "org.postgresql.Driver";
