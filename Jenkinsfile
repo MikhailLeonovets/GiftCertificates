@@ -20,7 +20,7 @@ pipeline {
             post {
                 always {
                     emailext attachLog: true,
-                            to: "enchantment.com@gmail.com",
+                            to: "mikhail.leonovets@itechart-group.com",
                             subject: "Checkstyle report",
                             body: ""
                 }
