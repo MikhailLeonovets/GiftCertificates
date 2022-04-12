@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Checkstyle') {
             steps {
-                sh 'mvn checkstyle:checkstyle'
+                sh 'mvn --batch-mode -V -U -e checkstyle:checkstyle'
                 archiveArtifacts "**/checkstyle-result.xml"
             }
         }
@@ -45,6 +45,8 @@ pipeline {
     post('Generate report') {
         always {
             script {
+                recordIssues enabledForFailure: true, tool: checkStyle()
+
                 junit '**/surefire-reports/*.xml' // Должен быть этот шаг, иначе нет данных
 
                 emailext subject: "Automation Result6: Job '${env.JOB_NAME} - ${env.BUILD_NUMBER}'",

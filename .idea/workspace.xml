@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -393,14 +395,7 @@
       <workItem from="1649660543125" duration="5476000" />
       <workItem from="1649672484482" duration="91000" />
       <workItem from="1649672779867" duration="13735000" />
-      <workItem from="1649748029648" duration="15807000" />
-    </task>
-    <task id="LOCAL-00063" summary="jenkinsfile updated">
-      <created>1649410820117</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1649410820117</updated>
+      <workItem from="1649748029648" duration="16294000" />
     </task>
     <task id="LOCAL-00064" summary="jenkinsfile updated">
       <created>1649412563575</created>
@@ -738,7 +733,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649771701696</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="Jenkinsfile updated">
+      <created>1649771926925</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1649771926925</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
