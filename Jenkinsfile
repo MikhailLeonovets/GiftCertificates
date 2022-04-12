@@ -63,7 +63,6 @@ pipeline {
                       fail:${TEST_COUNTS,var="fail"}
                    ''',
                         to: '$DEFAULT_RECIPIENTS'
-
             }
         }
     }
