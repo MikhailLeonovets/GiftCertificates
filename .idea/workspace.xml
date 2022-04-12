@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -396,35 +395,7 @@
       <workItem from="1649660543125" duration="5476000" />
       <workItem from="1649672484482" duration="91000" />
       <workItem from="1649672779867" duration="13735000" />
-      <workItem from="1649748029648" duration="10717000" />
-    </task>
-    <task id="LOCAL-00057" summary="Jenkinsfile updated">
-      <created>1649339263895</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1649339263895</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Jenkinsfile updated">
-      <created>1649339317074</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1649339317074</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Jenkinsfile updated">
-      <created>1649406763856</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1649406763856</updated>
-    </task>
-    <task id="LOCAL-00060" summary="docker-compose.yml updated">
-      <created>1649407988509</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1649407988509</updated>
+      <workItem from="1649748029648" duration="15109000" />
     </task>
     <task id="LOCAL-00061" summary="docker-compose.yml updated">
       <created>1649409563811</created>
@@ -741,7 +712,35 @@
       <option name="project" value="LOCAL" />
       <updated>1649764723229</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="Jenkinsfile updated">
+      <created>1649766317572</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1649766317572</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Jenkinsfile updated">
+      <created>1649767370915</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1649767370915</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Jenkinsfile updated">
+      <created>1649767815905</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1649767815905</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Jenkinsfile updated">
+      <created>1649768614330</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1649768614330</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
