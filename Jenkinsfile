@@ -19,9 +19,10 @@ pipeline {
             }
             post {
                 always {
-                    mail to: "enchantment.com@gmail.com",
-                            subject: "Test Email",
-                            body: "Test"
+                    emailext attachLog: true,
+                            to: "enchantment.com@gmail.com",
+                            subject: "Checkstyle report",
+                            body: ""
                 }
             }
         }
