@@ -26,6 +26,12 @@ pipeline {
                 }
             }
         }
+        stage('TestResultpublish')
+                {
+                    step([$class: 'MSTestPublisher', testResultsFile: 'TestResults/*.trx'])
+                    zip archive: true, dir: '\\apps\\TestApplication\\bin\\Release', glob: '', zipFile: tagName + '.zip'
+
+                }
         stage('Test') {
             steps {
                 sh 'mvn test'
