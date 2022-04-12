@@ -46,7 +46,7 @@ pipeline {
             script {
                 recordIssues enabledForFailure: true, tool: checkStyle()
 
-                junit '**/surefire-reports/*.xml' // Должен быть этот шаг, иначе нет данных
+                junit '**/surefire-reports/*.xml'
 
                 emailext subject: "Automation Result6: Job '${env.JOB_NAME} - ${env.BUILD_NUMBER}'",
                         body: ''' ${SCRIPT,template="groovy-html-refactor.template"}''',
@@ -61,7 +61,9 @@ pipeline {
                         to: '$DEFAULT_RECIPIENTS'
 
                 emailext subject: "Automation Result: CHECKSTYLE",
-                        body: '''${ANALYSIS_ISSUES_COUNT, tool="checkstyle"}''',
+                        body: '''    
+                        Total amount of warnings ${ANALYSIS_ISSUES_COUNT}
+                           Amount of new warnings (since the last build i guess) ${ANALYSIS_ISSUES_COUNT, type="NEW"} ''',
                         to: '$DEFAULT_RECIPIENTS'
             }
         }
