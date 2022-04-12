@@ -45,8 +45,6 @@ pipeline {
     post('Generate report') {
         always {
             script {
-                cucumber fileIncludePattern: '**/cucumber-default-reports/*.json', sortingMethod: 'ALPHABETICAL'
-
                 junit '**/surefire-reports/*.xml' // Должен быть этот шаг, иначе нет данных
                 emailext subject: "Automation Result5: Job '${env.JOB_NAME} - ${env.BUILD_NUMBER}'",
                         body: '''${SCRIPT,template="groovy-html-larry-refactor.template"}''',
