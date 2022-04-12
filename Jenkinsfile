@@ -16,7 +16,7 @@ pipeline {
         stage('Checkstyle') {
             steps {
                 sh 'mvn checkstyle:checkstyle'
-                checkstyle '**/checkstyle-result.xml'
+                archiveArtifacts "checkstyle/*.xml"
             }
         }
         stage('Test') {
