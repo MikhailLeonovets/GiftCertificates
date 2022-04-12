@@ -10,7 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
-      <change beforePath="$PROJECT_DIR$/utility/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utility/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -394,42 +395,7 @@
       <workItem from="1649660543125" duration="5476000" />
       <workItem from="1649672484482" duration="91000" />
       <workItem from="1649672779867" duration="13735000" />
-      <workItem from="1649748029648" duration="3528000" />
-    </task>
-    <task id="LOCAL-00046" summary="some commit">
-      <created>1648743960553</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1648743960556</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Dockerfile changes">
-      <created>1648827416792</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1648827416792</updated>
-    </task>
-    <task id="LOCAL-00048" summary="GiftCertificateSpringJdbcRepository updated&#10;GiftCertificateSpringJdbcRepositoryTest created">
-      <created>1649078962425</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1649078962425</updated>
-    </task>
-    <task id="LOCAL-00049" summary="TagRepository updated&#10;TagSpringJdbcRepositoryTest created">
-      <created>1649079816508</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1649079816508</updated>
-    </task>
-    <task id="LOCAL-00050" summary="pom.xml updated&#10;TagServiceImplTest updated and completed">
-      <created>1649156435583</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1649156435583</updated>
+      <workItem from="1649748029648" duration="6161000" />
     </task>
     <task id="LOCAL-00051" summary="GiftCertificateServiceImplTest created&#10;TagServiceImplTest updated">
       <created>1649166059503</created>
@@ -739,7 +705,42 @@
       <option name="project" value="LOCAL" />
       <updated>1649757317204</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Jenkinsfile updated&#10;pom.xml updated">
+      <created>1649757780946</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1649757780946</updated>
+    </task>
+    <task id="LOCAL-00096" summary="Jenkinsfile updated">
+      <created>1649757853080</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1649757853080</updated>
+    </task>
+    <task id="LOCAL-00097" summary="Jenkinsfile updated">
+      <created>1649758655415</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1649758655415</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Jenkinsfile updated">
+      <created>1649758702838</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1649758702838</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Jenkinsfile updated">
+      <created>1649760873587</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1649760873587</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -757,7 +758,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Feature sort gift certificates created" />
     <MESSAGE value="Controllers refactored" />
     <MESSAGE value="some changes" />
     <MESSAGE value="DockerFile added" />
@@ -781,6 +781,7 @@
     <MESSAGE value="TestSpringJdbcConfiguration updated" />
     <MESSAGE value="pom.xml updated with checkstyle plugin and test plugin&#10;Jenkinsfile updated" />
     <MESSAGE value="pom.xml updated" />
+    <MESSAGE value="Jenkinsfile updated&#10;pom.xml updated" />
     <MESSAGE value="Jenkinsfile updated" />
     <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
   </component>
