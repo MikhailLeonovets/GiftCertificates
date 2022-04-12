@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="com" />
         <module name="utility" />
         <module name="controller" />
         <module name="repository" />
         <module name="service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
