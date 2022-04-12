@@ -7,6 +7,11 @@ import java.util.Optional;
 
 public interface TagRepository {
 
+	/**
+	 *
+	 * @param tag is to be saved to the database
+	 * @return
+	 */
 	Tag save(Tag tag);
 
 	List<Tag> findAll();
