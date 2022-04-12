@@ -16,7 +16,8 @@ pipeline {
         stage('Checkstyle') {
             steps {
                 sh 'mvn --batch-mode -V -U -e checkstyle:checkstyle'
-                archiveArtifacts "**/checkstyle-result.xml"
+                def checkstyle = scanForIssues tool: checkStyle(pattern: '**/target/checkstyle-result.xml')
+                publishIssues issues: [checkstyle]
             }
         }
         stage('Test') {
@@ -45,8 +46,6 @@ pipeline {
     post('Generate report') {
         always {
             script {
-                recordIssues enabledForFailure: true, tool: checkStyle()
-
                 junit '**/surefire-reports/*.xml' // Должен быть этот шаг, иначе нет данных
 
                 emailext subject: "Automation Result6: Job '${env.JOB_NAME} - ${env.BUILD_NUMBER}'",
@@ -60,6 +59,11 @@ pipeline {
                       fail:${TEST_COUNTS,var="fail"}
                    ''',
                         to: '$DEFAULT_RECIPIENTS'
+
+                publishIssues id: 'analysis', name: 'All Issues',
+                        issues: [checkstyle, pmd, spotbugs],
+                        filters: [includePackage('io.jenkins.plugins.analysis.*')]
+
             }
         }
     }
