@@ -9,12 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Jenkinsfile updated">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="pom.xml updated with checkstyle plugin and test plugin&#10;Jenkinsfile updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utility/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/utility/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,14 +393,8 @@
       <workItem from="1649402061116" duration="19039000" />
       <workItem from="1649660543125" duration="5476000" />
       <workItem from="1649672484482" duration="91000" />
-      <workItem from="1649672779867" duration="13694000" />
-    </task>
-    <task id="LOCAL-00042" summary="sql script of creating database added">
-      <created>1648474404481</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1648474404481</updated>
+      <workItem from="1649672779867" duration="13735000" />
+      <workItem from="1649748029648" duration="2876000" />
     </task>
     <task id="LOCAL-00043" summary="Jenkinsfile created&#10;docker-compose.yml updated">
       <created>1648720056165</created>
@@ -742,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649688470779</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="pom.xml updated with checkstyle plugin and test plugin&#10;Jenkinsfile updated">
+      <created>1649692111128</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1649692111128</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -760,7 +757,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Searching by name/description feature created" />
     <MESSAGE value="Feature sort gift certificates created" />
     <MESSAGE value="Controllers refactored" />
     <MESSAGE value="some changes" />
@@ -785,7 +781,8 @@
     <MESSAGE value="pom.xml updated&#10;Jenkinsfile updated" />
     <MESSAGE value="TestSpringJdbcConfiguration updated" />
     <MESSAGE value="Jenkinsfile updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile updated" />
+    <MESSAGE value="pom.xml updated with checkstyle plugin and test plugin&#10;Jenkinsfile updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom.xml updated with checkstyle plugin and test plugin&#10;Jenkinsfile updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
