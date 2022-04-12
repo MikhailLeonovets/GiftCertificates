@@ -8,11 +8,6 @@ pipeline {
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
     stages {
-        stage('Build') {
-            steps {
-                sh 'mvn package'
-            }
-        }
         stage('Checkstyle') {
             steps {
                 sh 'mvn checkstyle:checkstyle'
@@ -38,7 +33,11 @@ pipeline {
                 }
             }
         }
-
+        stage('Build') {
+            steps {
+                sh 'mvn package'
+            }
+        }
         stage('Docker Build') {
             steps {
                 script {
