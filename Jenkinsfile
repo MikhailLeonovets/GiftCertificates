@@ -18,6 +18,9 @@ pipeline {
                 sh 'mvn --batch-mode -V -U -e checkstyle:checkstyle'
                 def checkstyle = scanForIssues tool: checkStyle(pattern: '**/target/checkstyle-result.xml')
                 publishIssues issues: [checkstyle]
+                publishIssues id: 'analysis', name: 'All Issues',
+                        issues: [checkstyle, pmd, spotbugs],
+                        filters: [includePackage('io.jenkins.plugins.analysis.*')]
             }
         }
         stage('Test') {
@@ -59,11 +62,6 @@ pipeline {
                       fail:${TEST_COUNTS,var="fail"}
                    ''',
                         to: '$DEFAULT_RECIPIENTS'
-
-                publishIssues id: 'analysis', name: 'All Issues',
-                        issues: [checkstyle, pmd, spotbugs],
-                        filters: [includePackage('io.jenkins.plugins.analysis.*')]
-
             }
         }
     }
