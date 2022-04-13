@@ -3,7 +3,6 @@ pipeline {
     tools {
         maven 'maven-3.8.4'
     }
-
     environment {
         DATE = new Date().format('yy.M')
         TAG = "${DATE}.${BUILD_NUMBER}"
