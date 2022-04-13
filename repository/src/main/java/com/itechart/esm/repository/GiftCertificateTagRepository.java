@@ -54,7 +54,6 @@ public interface GiftCertificateTagRepository {
 	boolean delete(GiftCertificateTag giftCertificateTag);
 
 	/**
-	 *
 	 * @param id giftCertificateTag of to be deleted from the database
 	 * @return true if this giftCertificateTag is presented in the database else return false
 	 */

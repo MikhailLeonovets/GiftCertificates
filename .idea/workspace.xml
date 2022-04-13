@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Javadoc in TagRepository updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/TagService.java" afterDir="false" />
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Javadoc in TagService updated">
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateTagRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/repository/src/main/java/com/itechart/esm/repository/GiftCertificateTagRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -398,14 +398,7 @@
       <workItem from="1649672484482" duration="91000" />
       <workItem from="1649672779867" duration="13735000" />
       <workItem from="1649748029648" duration="20756000" />
-      <workItem from="1649833798865" duration="3960000" />
-    </task>
-    <task id="LOCAL-00071" summary="pom.xml updated">
-      <created>1649415481395</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1649415481395</updated>
+      <workItem from="1649833798865" duration="4543000" />
     </task>
     <task id="LOCAL-00072" summary="pom.xml updated">
       <created>1649415734749</created>
@@ -743,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649836541492</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="Javadoc in TagService updated">
+      <created>1649840211748</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1649840211748</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +761,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="docker-compose.yml created&#10;Dockerfile renamed&#10;database.properties updated" />
     <MESSAGE value="sql scripts added" />
     <MESSAGE value="sql script of creating database added" />
     <MESSAGE value="Jenkinsfile created&#10;docker-compose.yml updated" />
@@ -786,7 +785,8 @@
     <MESSAGE value="Jenkinsfile updated" />
     <MESSAGE value="Some Javadoc in the repository module added" />
     <MESSAGE value="Javadoc in TagRepository updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc in TagRepository updated" />
+    <MESSAGE value="Javadoc in TagService updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc in TagService updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
