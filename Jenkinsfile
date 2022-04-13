@@ -7,6 +7,7 @@ pipeline {
         DATE = new Date().format('yy.M')
         TAG = "${DATE}.${BUILD_NUMBER}"
     }
+
     stages {
         stage('Build') {
             steps {
