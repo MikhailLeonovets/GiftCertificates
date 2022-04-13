@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Javadoc in GiftCertificateService created">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateManagementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/itechart/esm/service/GiftCertificateTagService.java" afterDir="false" />
-    </list>
+    <list default="true" id="175258bb-27c1-48e0-99cd-97dd7878a143" name="Changes" comment="Javadoc in GiftCertificateTagService created&#10;Javadoc in GiftCertificateManagementService created" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -398,14 +394,7 @@
       <workItem from="1649672484482" duration="91000" />
       <workItem from="1649672779867" duration="13735000" />
       <workItem from="1649748029648" duration="20756000" />
-      <workItem from="1649833798865" duration="9599000" />
-    </task>
-    <task id="LOCAL-00073" summary="Jenkinsfile updated">
-      <created>1649419972466</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1649419972466</updated>
+      <workItem from="1649833798865" duration="10416000" />
     </task>
     <task id="LOCAL-00074" summary="Jenkinsfile updated">
       <created>1649422752956</created>
@@ -743,7 +732,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649840920679</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Javadoc in GiftCertificateTagService created&#10;Javadoc in GiftCertificateManagementService created">
+      <created>1649846230698</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1649846230698</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,7 +757,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="sql script of creating database added" />
     <MESSAGE value="Jenkinsfile created&#10;docker-compose.yml updated" />
     <MESSAGE value="some commit" />
     <MESSAGE value="Dockerfile changes" />
@@ -786,7 +781,8 @@
     <MESSAGE value="Javadoc in TagRepository updated" />
     <MESSAGE value="Javadoc in TagService updated" />
     <MESSAGE value="Javadoc in GiftCertificateService created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc in GiftCertificateService created" />
+    <MESSAGE value="Javadoc in GiftCertificateTagService created&#10;Javadoc in GiftCertificateManagementService created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc in GiftCertificateTagService created&#10;Javadoc in GiftCertificateManagementService created" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GiftCertificates$GiftCertificateSpringJdbcRepositoryTest.ic" NAME="GiftCertificateSpringJdbcRepositoryTest Coverage Results" MODIFIED="1649173138075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
